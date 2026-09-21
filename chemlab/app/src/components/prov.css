@@ -1,26 +1,157 @@
-.prov { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: .35em; }
-.prov-label { color: var(--dim); }
-.prov-value { font-variant-numeric: tabular-nums; font-weight: 600; }
-.prov-unit { color: var(--dim); font-weight: 500; font-size: .85em; }
-.prov-kelvin, .prov-conf, .prov-src, .prov-note, .prov-missing { color: var(--dim); font-size: .72em; font-weight: 400; }
-.prov-conf { background: var(--chip); border-radius: 99px; padding: .05em .45em; }
-.prov-src { flex-basis: 100%; opacity: .62; line-height: 1.3; }
-.prov-note { flex-basis: 100%; opacity: .8; font-style: italic; }
-.prov-missing { color: var(--warn); }
-.prov-approx .prov-value { color: var(--approx); }
-.prov-predicted .prov-value { color: var(--predicted); }
-.prov-flag { background: color-mix(in srgb, var(--predicted) 22%, transparent); color: var(--predicted); border-radius: 4px; padding: .05em .4em; font-size: .68em; text-transform: uppercase; letter-spacing: .04em; }
-.prov-computed .prov-value { color: var(--computed); }
+/* PROVENANCE — HACKER RED BLACK WHITE — FIXED */
 
-/* a guard finding: the data's words, and the key they came from */
-.find { border-left: 2px solid var(--line); padding: 6px 0 6px 10px; margin: 8px 0; }
-.find-block { border-left-color: var(--danger); background: color-mix(in srgb, var(--danger) 7%, transparent); }
-.find-warn { border-left-color: var(--warn); }
-.find-note { opacity: .85 }
-.find strong { font-size: 13.5px; }
-.find-text { margin: 4px 0; font-size: 13.5px; }
-.find-action { margin: 4px 0; font-size: 13px; color: var(--ok); }
-.from { color: var(--dim); margin: 4px 0 0; }
-.from code { font-size: 11.5px; background: var(--panel); padding: .05em .35em; border-radius: 5px; border: 1px solid var(--line); }
-.quiet { margin-top: 8px; }
-.quiet summary { cursor: pointer; font-size: 12.5px; color: var(--dim); }
+.prov {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+  overflow: visible;
+}
+.prov-label {
+  color: #666;
+  font-weight: 800;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.prov-value {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  word-break: break-word;
+}
+.prov-unit {
+  color: #888;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.prov-kelvin, .prov-conf, .prov-src, .prov-note, .prov-missing {
+  color: #666;
+  font-size: 10px;
+  font-weight: 700;
+  word-break: break-word;
+}
+.prov-conf {
+  background: #000;
+  border: 1px solid #33000a;
+  border-radius: 0;
+  padding: 2px 8px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.prov-src {
+  flex-basis: 100%;
+  opacity: 0.7;
+  line-height: 1.4;
+  font-size: 10px;
+  word-break: break-word;
+}
+.prov-note {
+  flex-basis: 100%;
+  opacity: 0.9;
+  font-style: normal;
+  font-weight: 700;
+  color: #888;
+  background: rgba(255,0,51,0.04);
+  border-left: 2px solid #33000a;
+  padding: 4px 8px;
+  margin-top: 4px;
+}
+.prov-missing {
+  color: #ffcc00;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: rgba(255,204,0,0.1);
+  border: 1px solid #ffcc00;
+  padding: 2px 6px;
+}
+.prov-approx .prov-value { color: #ff0033; text-shadow: 0 0 6px rgba(255,0,51,0.4); }
+.prov-predicted .prov-value { color: #ff3366; }
+.prov-flag {
+  background: rgba(255,0,51,0.15);
+  color: #ff0033;
+  border: 1px solid #ff0033;
+  border-radius: 0;
+  padding: 2px 6px;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: 0 0 6px rgba(255,0,51,0.2);
+}
+.prov-computed .prov-value { color: #fff; }
+
+/* FINDINGS */
+.find {
+  border-left: 3px solid #33000a;
+  padding: 8px 0 8px 12px;
+  margin: 10px 0;
+  background: rgba(255,0,51,0.03);
+  overflow: visible;
+  min-width: 0;
+}
+.find-block {
+  border-left-color: #ff0033;
+  background: rgba(255,0,51,0.08);
+  box-shadow: inset 0 0 20px rgba(255,0,51,0.04);
+}
+.find-warn { border-left-color: #ffcc00; background: rgba(255,204,0,0.06); }
+.find-note { opacity: 0.9; }
+.find strong {
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  word-break: break-word;
+}
+.find-text {
+  margin: 6px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+  line-height: 1.5;
+  word-break: break-word;
+}
+.find-action {
+  margin: 6px 0;
+  font-size: 11px;
+  font-weight: 800;
+  color: #ff0033;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.from {
+  color: #666;
+  margin: 6px 0 0;
+  font-size: 10px;
+  font-weight: 700;
+  word-break: break-word;
+}
+.from code {
+  font-size: 11px;
+  background: #000;
+  padding: 2px 6px;
+  border-radius: 0;
+  border: 1px solid #1a1a1a;
+  border-left: 2px solid #ff0033;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  word-break: break-all;
+}
+.quiet { margin-top: 10px; }
+.quiet summary {
+  cursor: pointer;
+  font-size: 11px;
+  color: #666;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.quiet summary:hover { color: #ff0033; }

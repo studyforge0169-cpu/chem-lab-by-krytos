@@ -3,9 +3,12 @@
 .ai-screen {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 140px);
-  max-height: 900px;
+  height: auto;
+  min-height: calc(100vh - 200px);
+  min-height: calc(100dvh - 200px);
+  max-height: none;
   gap: 12px;
+  overflow: visible;
 }
 
 /* HEADER — HACKER */
@@ -144,12 +147,16 @@
 /* CHAT — HACKER TERMINAL */
 .ai-chat {
   flex: 1;
+  min-height: 300px;
+  max-height: 60vh;
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: 10px 6px 10px 0;
+  padding: 10px 8px 10px 0;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .ai-msg {
@@ -566,10 +573,15 @@
 .ai-input-row {
   background: #000;
   border-top: 2px solid var(--accent);
-  padding: 12px 0 6px;
+  padding: 12px 0 8px;
   position: sticky;
   bottom: 0;
-  box-shadow: 0 -4px 20px rgba(255,0,51,0.15);
+  z-index: 5;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.9), 0 -2px 20px rgba(255,0,51,0.15);
+  margin: 0 -14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  overflow: visible;
 }
 .ai-input-wrap {
   display: flex;

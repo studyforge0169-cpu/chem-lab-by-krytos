@@ -151,7 +151,7 @@ a:hover { color: #fff; text-shadow: var(--accent-glow); }
 .ship-list li { margin: 3px 0; color: var(--dim); }
 .ship-list li::marker { color: var(--accent); }
 
-main { flex: 1; padding: 12px 14px calc(84px + env(safe-area-inset-bottom)); }
+main { flex: 1; padding: 12px 14px calc(96px + env(safe-area-inset-bottom)); min-height: 0; overflow-x: hidden; overflow-y: visible; }
 
 /* TABS — HACKER RED */
 .tabs {

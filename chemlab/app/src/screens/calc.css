@@ -1,30 +1,202 @@
-/* the pH screen: a picker, three questions, one curve */
-.pick { display: flex; flex-direction: column; gap: 6px; }
-.pick input { background: var(--panel-2); border: 1px solid var(--line); border-radius: 9px; padding: .5em .6em; color: var(--ink); font: inherit; }
-.pick-done { flex-direction: row; align-items: baseline; gap: 8px; }
-.pick-done .x { margin-left: auto; }
-.pick-hits { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-.pick-hits button { display: flex; justify-content: space-between; gap: 8px; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: var(--panel); color: var(--ink); padding: 8px 10px; font: inherit; }
-.pick-hits button:last-child { border-bottom: 0; }
-.num { display: inline-flex; align-items: center; gap: 5px; }
-.ph-big { display: flex; flex-direction: column; gap: 7px; }
-.ph-num { font: 600 34px/1 var(--mono, ui-monospace, monospace); letter-spacing: -.02em; }
-.curve { width: 100%; height: auto; display: block; margin: 4px 0 6px; background: color-mix(in srgb, var(--panel) 55%, transparent); border-radius: 8px; }
-table.ind td { vertical-align: top; }
-table.ind tr.ok { background: color-mix(in srgb, var(--ok, #3fb96b) 10%, transparent); }
-table.ind tr.no { color: var(--dim); }
-.sw { display: inline-block; width: 13px; height: 13px; border-radius: 4px; border: 1px solid var(--line); vertical-align: -2px; margin-right: 3px; }
-.gap-card { border-color: var(--line); background: color-mix(in srgb, var(--panel) 70%, transparent); }
-.gap-card .sect { color: var(--dim); }
+/* CALC — HACKER RED BLACK WHITE — FIXED OVERLAYS */
 
-/* the electrochemistry modes: two electrodes in, a cell out */
-.row.col { flex-direction: column; align-items: stretch; gap: 6px; }
-.eq { font-size: 13.5px; overflow-wrap: anywhere; margin: 4px 0; }
-.eq.big { font-size: 15px; }
-.half + .half { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
-.cell-big { display: flex; flex-direction: column; gap: 7px; }
-.series-list { display: flex; flex-direction: column; gap: 5px; margin-top: 6px; }
-.series-row { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; background: var(--panel-2);
-  border: 1px solid var(--line); border-radius: 10px; padding: 7px 9px; color: inherit; font: inherit; font-size: 13px; cursor: pointer; }
-.series-row.no { opacity: .6; }
-.series-row.yes { border-color: color-mix(in srgb, var(--ok, #3fb96b) 40%, var(--line)); }
+.pick {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.pick input {
+  background: #000;
+  border: 1px solid #33000a;
+  border-left: 3px solid #ff0033;
+  border-radius: 0;
+  padding: 10px 12px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  width: 100%;
+  transition: all 0.2s;
+}
+.pick input:focus {
+  border-color: #ff0033;
+  box-shadow: 0 0 12px rgba(255,0,51,0.2);
+  background: #0a0a0a;
+  outline: none;
+}
+.pick-done {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-left: 2px solid #ff0033;
+  padding: 10px 12px;
+}
+.pick-done .x { margin-left: auto; }
+.pick-hits {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ff0033;
+  border-radius: 0;
+  overflow: hidden;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(255,0,51,0.2);
+  background: #000;
+}
+.pick-hits button {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #1a1a1a;
+  background: #0a0a0a;
+  color: #fff;
+  padding: 10px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 0;
+}
+.pick-hits button:hover {
+  background: #111;
+  border-left: 2px solid #ff0033;
+  color: #fff;
+}
+.pick-hits button:last-child { border-bottom: 0; }
+.num {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.ph-big {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-left: 3px solid #ff0033;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.8);
+}
+.ph-num {
+  font: 800 36px/1 'JetBrains Mono', monospace;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+.curve {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px 0;
+  background: #000;
+  border: 1px solid #1a1a1a;
+  border-radius: 0;
+}
+table.ind {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.ind td {
+  vertical-align: top;
+  padding: 8px;
+  border-bottom: 1px solid #1a1a1a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  word-break: break-word;
+}
+table.ind tr.ok {
+  background: rgba(255,255,255,0.04);
+  border-left: 2px solid #fff;
+}
+table.ind tr.no { color: #666; }
+.sw {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 0;
+  border: 1px solid #ff0033;
+  vertical-align: -2px;
+  margin-right: 6px;
+  box-shadow: 0 0 6px rgba(255,0,51,0.2);
+}
+.gap-card {
+  border-color: #33000a;
+  background: #0a0a0a;
+  border-left: 2px solid #ff0033;
+}
+.gap-card .sect { color: #ff0033; }
+
+/* electrochemistry */
+.row.col {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+.eq {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  margin: 6px 0;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+  word-break: break-word;
+  font-family: 'JetBrains Mono', monospace;
+}
+.eq.big { font-size: 15px; font-weight: 800; }
+.half + .half {
+  border-top: 1px dashed #33000a;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+.cell-big {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-left: 3px solid #ff0033;
+  padding: 14px;
+}
+.series-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+.series-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-left: 2px solid #33000a;
+  border-radius: 0;
+  padding: 10px 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 0;
+  overflow: visible;
+}
+.series-row:hover {
+  border-color: #ff0033;
+  background: #111;
+  box-shadow: 0 0 10px rgba(255,0,51,0.15);
+}
+.series-row.no { opacity: 0.5; }
+.series-row.yes {
+  border-color: #fff;
+  border-left-color: #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.15);
+}

@@ -1,8 +1,41 @@
-/* the notebook: saved runs, on the device */
-.note-list { display: flex; flex-direction: column; gap: 7px; margin: 8px 0; }
-.note-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 11px; padding: 9px 10px; }
-.note-card.stale { border-color: color-mix(in srgb, var(--warn) 45%, var(--line)); }
-.note-card summary { cursor: pointer; font-size: 12.5px; color: var(--dim); margin-top: 4px; }
-.note-card .kv { margin-top: 6px; }
-.sub { margin-top: 8px; }
-.sub-h { margin: 0 0 3px; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: var(--dim); }
+/* NOTEBOOK — HACKER RED BLACK WHITE — FIXED */
+
+.notebook-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.note-card {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-left: 3px solid #ff0033;
+  border-radius: 0;
+  padding: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.8);
+  overflow: visible;
+}
+.note-card h3 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  word-break: break-word;
+}
+.note-card .date {
+  font-size: 10px;
+  font-weight: 800;
+  color: #ff0033;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.note-card p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+  line-height: 1.5;
+  word-break: break-word;
+  white-space: pre-wrap;
+}

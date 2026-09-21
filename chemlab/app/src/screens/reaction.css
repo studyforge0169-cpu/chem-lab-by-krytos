@@ -1,15 +1,108 @@
-/* a reaction record, read top to bottom */
-.rs-hd h2 { margin: 0 0 6px; font-size: 17px; }
-.rs-eq { font-size: 15px; margin: 4px 0; overflow-wrap: anywhere; }
-.rs-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; margin: 5px 0; }
-.rs-lab { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--dim); min-width: 118px; }
-.rs-obs { margin: 5px 0; font-size: 13.5px; }
-.rs-ctrl { margin: 5px 0; font-size: 13px; }
-.terms { padding: 2px 0; }
-.terms + .terms { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 8px; }
-.term { display: flex; flex-wrap: wrap; align-items: baseline; gap: 7px; margin: 4px 0; }
-.term .link { font-size: 14px; }
-.dim { color: var(--dim); }
-.withheld { border-color: color-mix(in srgb, var(--warn) 38%, var(--line)); background: color-mix(in srgb, var(--warn) 6%, transparent); }
-.sub-h { margin: 0 0 3px; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: var(--dim); }
-ul.plain { margin: 4px 0; padding-left: 18px; font-size: 13px; }
+/* REACTION SHEET — HACKER RED BLACK WHITE — FIXED */
+
+.rs-hd h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  word-break: break-word;
+  line-height: 1.3;
+}
+.rs-eq {
+  font-size: 14px;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-weight: 800;
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  background: #000;
+  border: 1px solid #1a1a1a;
+  border-left: 3px solid #ff0033;
+  padding: 10px 12px;
+  line-height: 1.4;
+}
+.rs-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 8px 0;
+  min-width: 0;
+}
+.rs-lab {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ff0033;
+  min-width: 120px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.rs-obs {
+  margin: 8px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+  word-break: break-word;
+}
+.rs-ctrl {
+  margin: 8px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+  line-height: 1.4;
+  word-break: break-word;
+}
+.terms {
+  padding: 6px 0;
+  overflow: visible;
+}
+.terms + .terms {
+  border-top: 1px dashed #33000a;
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.term {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  margin: 6px 0;
+  min-width: 0;
+}
+.term .link {
+  font-size: 13px;
+  font-weight: 800;
+  min-width: 0;
+  word-break: break-word;
+}
+.dim { color: #666; font-weight: 700; }
+.withheld {
+  border-color: #ffcc00;
+  background: rgba(255,204,0,0.08);
+  border-left: 3px solid #ffcc00;
+}
+.sub-h {
+  margin: 0 0 6px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ff0033;
+  font-weight: 800;
+}
+ul.plain {
+  margin: 8px 0;
+  padding-left: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+}
+ul.plain li {
+  margin: 4px 0;
+  word-break: break-word;
+}

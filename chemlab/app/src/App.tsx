@@ -39,15 +39,16 @@ function Shell() {
     <div className="app">
       <header className="hdr">
         <h1 className="glitch">
-          CHEMLAB // RED // BLACK // WHITE — HACKER TERMINAL
+          <span>CHEMLAB // HACKER TERMINAL v2.0</span>
           <span className="chip pulse-red">{store.counts.species} SUBSTANCES</span>
           <span className="chip" style={{ background: "#ff0033", color: "white", border: "1px solid #ff0033", boxShadow: "0 0 10px rgba(255,0,51,0.8)" }}>✦ AI // WORLD</span>
           <span className="chip" style={{ background: "#000", color: "#ff0033", border: "1px solid #ff0033" }}>118 ELEMENTS</span>
+          <span className="chip" style={{ background: "#000", color: "#fff", border: "1px solid #333" }}>RED // BLACK // WHITE</span>
         </h1>
         <div className="build">
-          <span style={{ color: "#ff0033" }}>[DATA]</span> {store.dataGenerated ? store.dataGenerated.slice(0, 10) : "?"}
-          <br />
-          <span style={{ color: "#ff0033" }}>[BUILD]</span> {String(store.buildId).slice(0, 12)} // HACKER v2.0
+          <span><span style={{ color: "#ff0033" }}>[DATA]</span> {store.dataGenerated ? store.dataGenerated.slice(0, 10) : "?"}</span>
+          <span><span style={{ color: "#ff0033" }}>[BUILD]</span> {String(store.buildId).slice(0, 12)}</span>
+          <span style={{ color: "#fff", background: "#ff0033", padding: "2px 6px", fontSize: "9px" }}>HACKER v2.0 // FUTURISTIC</span>
         </div>
         {pill ? (
           <div className="ship">

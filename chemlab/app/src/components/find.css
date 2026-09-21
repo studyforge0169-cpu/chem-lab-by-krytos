@@ -1,17 +1,122 @@
-/* the header's one search box, and the list it drops over the page */
-.findbar { margin-top: 8px; position: relative; }
-.find-field { flex: 1; margin: 0; }
-.find-field input { width: 100%; background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: .5em .6em; color: var(--ink); font: inherit; font-size: 13.5px; }
-.find-counts { margin: 4px 0 0; color: var(--dim); }
-.find-hits { list-style: none; margin: 6px 0 0; padding: 0; max-height: 56vh; overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
-.find-hits li + li { border-top: 1px solid var(--line); }
-.find-hits .note { margin: 8px 10px; }
-.find-hit { display: flex; align-items: baseline; gap: 7px; width: 100%; text-align: left; background: none; border: 0; padding: 8px 10px; color: inherit; font: inherit; font-size: 13px; cursor: pointer; }
-.find-hit:active { background: var(--panel-2); }
-.find-label { font-size: 14px; }
-.find-kind { flex: none; }
-.find-kind.k-species { color: var(--ok); }
-.find-kind.k-element { color: var(--accent); }
-.find-kind.k-reaction { color: var(--warn); }
-.find-kind.k-combination { color: var(--predicted); }
-.find-kind.k-note { color: var(--dim); }
+/* FIND BAR — HACKER RED BLACK WHITE — FIXED OVERLAYS */
+
+.findbar {
+  margin-top: 10px;
+  position: relative;
+  z-index: 5;
+  overflow: visible;
+}
+.find-field {
+  flex: 1;
+  margin: 0;
+  min-width: 0;
+  overflow: visible;
+}
+.find-field input {
+  width: 100%;
+  background: #000;
+  border: 1px solid #33000a;
+  border-left: 3px solid #ff0033;
+  border-radius: 0;
+  padding: 10px 12px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  transition: all 0.2s;
+  min-width: 0;
+}
+.find-field input:focus {
+  border-color: #ff0033;
+  box-shadow: 0 0 14px rgba(255,0,51,0.25);
+  background: #0a0a0a;
+  outline: none;
+}
+.find-field input::placeholder {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+.find-counts {
+  margin: 6px 0 0;
+  color: #666;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.find-hits {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  max-height: 56vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #0a0a0a;
+  border: 2px solid #ff0033;
+  border-radius: 0;
+  box-shadow: 0 0 20px rgba(255,0,51,0.2), 0 12px 30px rgba(0,0,0,0.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 20;
+}
+.find-hits li + li {
+  border-top: 1px solid #1a1a1a;
+}
+.find-hits .note {
+  margin: 10px 12px;
+  font-weight: 700;
+}
+.find-hit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: #0a0a0a;
+  border: 0;
+  border-left: 2px solid transparent;
+  padding: 10px 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 0;
+  overflow: hidden;
+}
+.find-hit:hover {
+  background: #111;
+  border-left-color: #ff0033;
+  color: #fff;
+}
+.find-hit:active {
+  background: #000;
+}
+.find-label {
+  font-size: 13px;
+  font-weight: 800;
+  min-width: 0;
+  flex: 1;
+  word-break: break-word;
+  color: #fff;
+}
+.find-kind {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 6px;
+  border: 1px solid;
+  border-radius: 0;
+}
+.find-kind.k-species { color: #fff; border-color: #fff; background: rgba(255,255,255,0.08); }
+.find-kind.k-element { color: #ff0033; border-color: #ff0033; background: rgba(255,0,51,0.1); }
+.find-kind.k-reaction { color: #ffcc00; border-color: #ffcc00; background: rgba(255,204,0,0.1); }
+.find-kind.k-combination { color: #ff3366; border-color: #ff3366; background: rgba(255,51,102,0.1); }
+.find-kind.k-note { color: #666; border-color: #333; background: #000; }

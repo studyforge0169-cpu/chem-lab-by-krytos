@@ -1,14 +1,72 @@
-/* the reactions browser */
-.rx-list { display: flex; flex-direction: column; gap: 5px; margin: 8px 0; }
-.rx-row { display: flex; flex-direction: column; gap: 4px; width: 100%; text-align: left; background: var(--panel-2); border: 1px solid var(--line); border-radius: 11px; padding: 8px 10px; color: inherit; font: inherit; font-size: 13px; cursor: pointer; }
-.rx-row.rx-loud { border-left: 3px solid var(--warn); }
-.rx-row.rx-blocked { border-left: 3px solid var(--danger); }
-.rx-name { font-size: 14px; font-weight: 600; }
-.rx-eq { font-size: 13.5px; }
-.rx-sub { gap: 7px; flex-wrap: wrap; }
-.rx-obs { color: var(--dim); }
-.rx-has { display: flex; gap: 4px; flex-wrap: wrap; align-items: baseline; }
-.rx-has-chip { font-size: 10.5px; }
-.facet-group { margin-top: 8px; }
-.facet-group-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: var(--dim); margin-bottom: 3px; }
-.facet-why { margin: 6px 0 0; padding-left: 1.1em; font-size: 12.5px; color: var(--dim); }
+/* REACTIONS — HACKER RED BLACK WHITE — FIXED */
+
+.reactions-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid #111;
+}
+.reactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reaction-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-left: 3px solid #33000a;
+  border-radius: 0;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: visible;
+  min-width: 0;
+}
+.reaction-row:hover {
+  background: #111;
+  border-color: #ff0033;
+  border-left-color: #ff0033;
+  box-shadow: 0 0 14px rgba(255,0,51,0.15);
+  transform: translateX(2px);
+}
+.reaction-row .eq {
+  font-weight: 800;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.4;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  flex: 1;
+  font-family: 'JetBrains Mono', monospace;
+}
+.reaction-row .meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-shrink: 0;
+}
+.reaction-row .type {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ff0033;
+  background: rgba(255,0,51,0.1);
+  border: 1px solid #33000a;
+  padding: 2px 6px;
+}
+
+@media (max-width: 600px) {
+  .reaction-row { padding: 10px; flex-direction: column; gap: 8px; }
+  .reaction-row .eq { font-size: 12px; }
+}
