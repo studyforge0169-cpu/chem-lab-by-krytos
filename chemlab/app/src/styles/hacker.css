@@ -12,7 +12,7 @@
 main {
   flex: 1;
   min-height: 0;
-  padding: 14px 14px calc(96px + env(safe-area-inset-bottom)) !important;
+  padding: 14px 14px calc(110px + env(safe-area-inset-bottom)) !important;
   overflow-x: hidden;
   overflow-y: visible;
 }
