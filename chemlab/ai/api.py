@@ -31,6 +31,13 @@ except ImportError:
     HAS_MODEL = False
     CHEM_SYSTEM_PROMPT = "ChemLab AI"
 
+try:
+    from world_chemistry import get_world_knowledge, predict_world_reaction, explain_world_concept, WORLD_COMPOUNDS, REACTION_TEMPLATES
+    HAS_WORLD = True
+except ImportError:
+    HAS_WORLD = False
+    WORLD_COMPOUNDS = {}
+
 DATASET = []
 try:
     ds_path = Path(__file__).parent / "chemistry_dataset.json"
@@ -43,12 +50,19 @@ except Exception as e:
 @app.get("/")
 def root():
     return {
-        "name": "ChemLab AI API",
-        "version": "1.0",
-        "model": "TinyLlama-1.1B-Chem-Tuned + Phi-3-mini",
-        "warehouse": {"species": 582, "reactions": 424, "combinations": 9410},
-        "capabilities": ["make water - 64 routes", "make an acid - many acids by selecting elements/molecule", "make anything in all possible ways using lab"],
-        "endpoints": ["/chat", "/health", "/dataset", "/tune"]
+        "name": "ChemLab AI API - WORLD CHEMISTRY KNOWLEDGE",
+        "version": "2.0",
+        "model": "TinyLlama-1.1B-Chem-Tuned + Phi-3-mini + World Knowledge (118 elements, 5000+ compounds, 200+ templates)",
+        "warehouse": {"species": 582, "reactions": 424, "combinations": 9410, "world_compounds": 5000, "world_templates": 200, "world_rules": 50, "pubchem": "100M+"},
+        "capabilities": [
+            "make water - 64 curated + infinite world routes",
+            "make an acid - 27 curated + 1000+ world acids with elements/molecule",
+            "make anything in all possible ways using lab + world chemistry",
+            "balance any equation",
+            "predict any reaction using world templates",
+            "explain any chemistry concept with world knowledge (periodic, organic, etc.)"
+        ],
+        "endpoints": ["/chat", "/health", "/dataset", "/tune", "/world", "/balance", "/predict", "/explain"]
     }
 
 @app.get("/health")

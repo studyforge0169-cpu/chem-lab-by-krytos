@@ -1,0 +1,1441 @@
+[
+  {
+    "instruction": "What can I make from Hassium (solid, standard state) and Tellurium (solid, standard state)?",
+    "input": "what can I make from Hassium (solid, standard state) and Tellurium (solid, standard state)?",
+    "output": "From Hassium (solid, standard state) and Tellurium (solid, standard state), you can make compounds containing Hs and Te. Check element pair Hs-Te in combinations (9410 pairs). Put elem_hs + elem_te on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_hs+elem_te",
+    "category": "mix"
+  },
+  {
+    "instruction": "How to make Hydrobromic acid (HBr)?",
+    "input": "make Hydrobromic acid",
+    "output": "To make Hydrobromic acid (HBr), you have 1 routes. Best: Bromine water on aniline: C6H5NH2 + 3 Br2 -> C6H2Br3NH2 + 3 HBr. Bench: C6H5NH2 + 3 Br2 -> C6H2Br3NH2 + 3 HBr. Observations: white; 2,4,6-tribromoaniline drops out instantly with no catalyst - the -NH2 group activates the ring so strongly that water is the solvent and the test is a school-level one. Safety: None/5. Load C6H5NH2 + 3 Br2 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "hbr",
+    "category": "specific"
+  },
+  {
+    "instruction": "Synthesize C2H6O",
+    "input": "make C2H6O",
+    "output": "Synthesizing C2H6O (Ethanol (rectified spirit)): CH3COOC2H5 + H2O -> CH3COOH + C2H5OH. Requires CH3COOC2H5 + H2O. This is a hydrolysis, kinetics reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "ethanol",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Oganesson (solid, standard state) and Gallium (solid, standard state)?",
+    "input": "what can I make from Oganesson (solid, standard state) and Gallium (solid, standard state)?",
+    "output": "From Oganesson (solid, standard state) and Gallium (solid, standard state), you can make compounds containing Og and Ga. Check element pair Og-Ga in combinations (9410 pairs). Put elem_og + elem_ga on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_og+elem_ga",
+    "category": "mix"
+  },
+  {
+    "instruction": "How to make Copper(II) hydroxide (Cu(OH)2)?",
+    "input": "make Copper(II) hydroxide",
+    "output": "To make Copper(II) hydroxide (Cu(OH)2), you have 1 routes. Best: Sodium hydroxide into copper sulphate: CuSO4 + 2 NaOH -> Cu(OH)2 + Na2SO4. Bench: CuSO4 + 2 NaOH -> Cu(OH)2 + Na2SO4. Observations: pale-blue-gel; insoluble in excess NaOH but dissolves in excess NH3 to royal blue. Safety: None/5. Load CuSO4 + 2 NaOH onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "cuoh2",
+    "category": "specific"
+  },
+  {
+    "instruction": "Synthesize Al(OH)3",
+    "input": "make Al(OH)3",
+    "output": "Synthesizing Al(OH)3 (Aluminium hydroxide): Al2(SO4)3 + 6 NaOH -> 2 Al(OH)3 + 3 Na2SO4. Requires Al2(SO4)3 + 6 NaOH. This is a metathesis, precip reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "aloh3",
+    "category": "specific"
+  },
+  {
+    "instruction": "Make many gass",
+    "input": "make many gass",
+    "output": "Making many gass by selecting elements/molecules: Diborane (reference only) (B2H6), Ammonia gas (dry) (NH3), Carbon dioxide (CO2), Oxygen (O2), Hydrogen (H2). Total 28 gass available. Each synthesis uses real lab reagents - no guesses. Try 'make Diborane (reference only)' for specific routes.",
+    "intent": "MAKE_MANY",
+    "target": "gas",
+    "category": "gas"
+  },
+  {
+    "instruction": "What happens when I mix KNO3 + H2SO4?",
+    "input": "what happens if I mix KNO3 + H2SO4?",
+    "output": "Mixing KNO3 + H2SO4 -> KHSO4 + HNO3: Potassium nitrate with concentrated sulphuric acid. Equation: KNO3 + H2SO4 -> KHSO4 + HNO3. Observations: hno3; fog; colourless->pale-yellow. Safety: danger 3/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_hno3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Polonium (solid, standard state) and Gallium (solid, standard state)?",
+    "input": "what can I make from Polonium (solid, standard state) and Gallium (solid, standard state)?",
+    "output": "From Polonium (solid, standard state) and Gallium (solid, standard state), you can make compounds containing Po and Ga. Check element pair Po-Ga in combinations (9410 pairs). Put elem_po + elem_ga on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_po+elem_ga",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix 4 KNO3 + 5 C?",
+    "input": "what happens if I mix 4 KNO3 + 5 C?",
+    "output": "Mixing 4 KNO3 + 5 C -> 2 K2CO3 + 2 N2 + 3 CO2: Potassium nitrate on charcoal. Equation: 4 KNO3 + 5 C -> 2 K2CO3 + 2 N2 + 3 CO2. Observations: sparkle; deflagrate; 'nitrates deflagrate on charcoal' - the dry-blow-pipe test for the nitrate ion. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_nitrate_k",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Synthesize H2SO4",
+    "input": "make H2SO4",
+    "output": "Synthesizing H2SO4 (Sulphuric acid): 2 CuSO4 + 2 H2O -> 2 Cu + 2 H2SO4 + O2. Requires 2 CuSO4 + 2 H2O. This is a electrochem, electrolysis reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "h2so4",
+    "category": "specific"
+  },
+  {
+    "instruction": "How to make Calcium hydroxide (slaked lime) (Ca(OH)2)?",
+    "input": "make Calcium hydroxide (slaked lime)",
+    "output": "To make Calcium hydroxide (slaked lime) (Ca(OH)2), you have 3 routes. Best: Calcium hydride / calcium carbide with water: CaC2 + 2 H2O -> C2H2 + Ca(OH)2. Bench: CaC2 + 2 H2O -> C2H2 + Ca(OH)2. Observations: ethyne; fizz. Safety: 2/5. Load CaC2 + 2 H2O onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "caoh2",
+    "category": "specific"
+  },
+  {
+    "instruction": "How to make Nitrobenzene (C6H5NO2)?",
+    "input": "make Nitrobenzene",
+    "output": "To make Nitrobenzene (C6H5NO2), you have 1 routes. Best: Nitration of benzene: C6H6 + HNO3 -> C6H5NO2 + H2O. Bench: C6H6 + HNO3 -> C6H5NO2 + H2O. Observations: ->pale-yellow-oil; almond. Safety: 3/5. Load C6H6 + HNO3 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "nitrobenzene",
+    "category": "specific"
+  },
+  {
+    "instruction": "Synthesize HCl",
+    "input": "make HCl",
+    "output": "Synthesizing HCl (Hydrochloric acid (muriatic)): NaCl + H2SO4 -> NaHSO4 + HCl. Requires NaCl + H2SO4. This is a synthesis, gas_gen reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "hcl",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Antimony (solid, standard state) and Neptunium (solid, standard state)?",
+    "input": "what can I make from Antimony (solid, standard state) and Neptunium (solid, standard state)?",
+    "output": "From Antimony (solid, standard state) and Neptunium (solid, standard state), you can make compounds containing Sb and Np. Check element pair Sb-Np in combinations (9410 pairs). Put elem_sb + elem_np on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_sb+elem_np",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix 2 CaSO4.2H2O?",
+    "input": "what happens if I mix 2 CaSO4.2H2O?",
+    "output": "Mixing 2 CaSO4.2H2O -> 2 CaSO4.1/2H2O + 3 H2O: Water of crystallisation in a balance. Equation: 2 CaSO4.2H2O -> 2 CaSO4.1/2H2O + 3 H2O. Observations: the plaster of Paris step - drive off 1.5 of the 2 waters at 150 C and the powder will rehydrate and set, which is the whole point; weigh before and after and the mass loss fixes the hydration number. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_cacl2_hydrate",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix Si + O2?",
+    "input": "what happens if I mix Si + O2?",
+    "output": "Mixing Si + O2 -> SiO2: Silicon burning / sand formation. Equation: Si + O2 -> SiO2. Observations: does not burn in air below about 1400 C - the 'why silicon is used at high temperature' point; none. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_sio2",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix 2 Fe(OH)3?",
+    "input": "what happens if I mix 2 Fe(OH)3?",
+    "output": "Mixing 2 Fe(OH)3 -> Fe2O3 + 3 H2O: Roasting iron(III) hydroxide. Equation: 2 Fe(OH)3 -> Fe2O3 + 3 H2O. Observations: red-brown-gel->rust-red; none; the gel shrinks and cracks as the water leaves. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_feoh3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix FeSO4 + (NH4)2SO4?",
+    "input": "what happens if I mix FeSO4 + (NH4)2SO4?",
+    "output": "Mixing FeSO4 + (NH4)2SO4 -> (NH4)2Fe(SO4)2: Crystallising Mohr's salt. Equation: FeSO4 + (NH4)2SO4 -> (NH4)2Fe(SO4)2. Observations: pale-green-crystal; combining equimolar solutions and concentrating gently gives the double salt, which is far more air-stable than FeSO4 - that is why it, not ferrous sulphate, is the titration standard; colourless->pale-green. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_mohr",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Neon (gas, standard state) and Roentgenium (solid, standard state)?",
+    "input": "what can I make from Neon (gas, standard state) and Roentgenium (solid, standard state)?",
+    "output": "From Neon (gas, standard state) and Roentgenium (solid, standard state), you can make compounds containing Ne and Rg. Check element pair Ne-Rg in combinations (9410 pairs). Put elem_ne + elem_rg on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_ne+elem_rg",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix NH4NO2?",
+    "input": "what happens if I mix NH4NO2?",
+    "output": "Mixing NH4NO2 -> N2 + 2 H2O: Ammonium nitrite decomposition. Equation: NH4NO2 -> N2 + 2 H2O. Observations: n2; nitrogen is only 'inert' at room temperature - hot magnesium burns in it to Mg3N2; none. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_n2",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Synthesize C2H4O2",
+    "input": "make C2H4O2",
+    "output": "Synthesizing C2H4O2 (Ethanoic (acetic) acid, glacial): H2S + (CH3COO)2Pb -> PbS + 2 CH3COOH. Requires H2S + (CH3COO)2Pb. This is a analysis, gas_test reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "aceticacid",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Cadmium (solid, standard state) and Erbium (solid, standard state)?",
+    "input": "what can I make from Cadmium (solid, standard state) and Erbium (solid, standard state)?",
+    "output": "From Cadmium (solid, standard state) and Erbium (solid, standard state), you can make compounds containing Cd and Er. Check element pair Cd-Er in combinations (9410 pairs). Put elem_cd + elem_er on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_cd+elem_er",
+    "category": "mix"
+  },
+  {
+    "instruction": "Make many organics",
+    "input": "make many organics",
+    "output": "Making many organics by selecting elements/molecules: Acetone (C3H6O), Ethanol (rectified spirit) (C2H6O), Methanol (CH4O), 1-Propanol (C3H8O), 2-Propanol (isopropyl alcohol) (C3H8O). Total 132 organics available. Each synthesis uses real lab reagents - no guesses. Try 'make Acetone' for specific routes.",
+    "intent": "MAKE_MANY",
+    "target": "organic",
+    "category": "organic"
+  },
+  {
+    "instruction": "What happens when I mix HCOOH?",
+    "input": "what happens if I mix HCOOH?",
+    "output": "Mixing HCOOH -> CO + H2O: Formic acid with concentrated sulphuric acid. Equation: HCOOH -> CO + H2O. Observations: co; the clean lab source of carbon monoxide; and unlike CO2 it does NOT cloud limewater, which is how you prove which gas you made. Safety: danger 3/5, fume-hood.",
+    "intent": "EXPLORE",
+    "target": "dec_formic",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Mendelevium (solid, standard state) and Nihonium (solid, standard state)?",
+    "input": "what can I make from Mendelevium (solid, standard state) and Nihonium (solid, standard state)?",
+    "output": "From Mendelevium (solid, standard state) and Nihonium (solid, standard state), you can make compounds containing Md and Nh. Check element pair Md-Nh in combinations (9410 pairs). Put elem_md + elem_nh on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_md+elem_nh",
+    "category": "mix"
+  },
+  {
+    "instruction": "How to make Methanol (CH4O)?",
+    "input": "make Methanol",
+    "output": "To make Methanol (CH4O), you have 1 routes. Best: Industrial methanol: CO + 2 H2 -> CH3OH. Bench: CO + 2 H2 -> CH3OH. Observations: Cu/ZnO/Al2O3 at 250 C and 50-100 atm; the same catalyst family that methanol fuel cells use. Safety: None/5. Load CO + 2 H2 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "methanol",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Helium (gas, standard state) and Roentgenium (solid, standard state)?",
+    "input": "what can I make from Helium (gas, standard state) and Roentgenium (solid, standard state)?",
+    "output": "From Helium (gas, standard state) and Roentgenium (solid, standard state), you can make compounds containing He and Rg. Check element pair He-Rg in combinations (9410 pairs). Put elem_he + elem_rg on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_he+elem_rg",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Moscovium (solid, standard state) and Thallium (solid, standard state)?",
+    "input": "what can I make from Moscovium (solid, standard state) and Thallium (solid, standard state)?",
+    "output": "From Moscovium (solid, standard state) and Thallium (solid, standard state), you can make compounds containing Mc and Tl. Check element pair Mc-Tl in combinations (9410 pairs). Put elem_mc + elem_tl on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_mc+elem_tl",
+    "category": "mix"
+  },
+  {
+    "instruction": "Synthesize NaHCO3",
+    "input": "make NaHCO3",
+    "output": "Synthesizing NaHCO3 (Sodium hydrogencarbonate (baking soda)): NaCl + NH3 + CO2 + H2O -> NaHCO3 + NH4Cl. Requires NaCl + NH3 + CO2 + H2O. This is a synthesis, precip reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "nahco3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Krypton (gas, standard state) and Promethium (solid, standard state)?",
+    "input": "what can I make from Krypton (gas, standard state) and Promethium (solid, standard state)?",
+    "output": "From Krypton (gas, standard state) and Promethium (solid, standard state), you can make compounds containing Kr and Pm. Check element pair Kr-Pm in combinations (9410 pairs). Put elem_kr + elem_pm on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_kr+elem_pm",
+    "category": "mix"
+  },
+  {
+    "instruction": "How to make Ammonia solution (ammonium hydroxide) (NH3)?",
+    "input": "make Ammonia solution (ammonium hydroxide)",
+    "output": "To make Ammonia solution (ammonium hydroxide) (NH3), you have 7 routes. Best: Lithium nitride hydrolysis (lab route to NH3): Li3N + 3 H2O -> 3 LiOH + NH3. Bench: Li3N + 3 H2O -> 3 LiOH + NH3. Observations: ammonia; fizz. Safety: None/5. Load Li3N + 3 H2O onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "nh4oh",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix 2 KMnO4?",
+    "input": "what happens if I mix 2 KMnO4?",
+    "output": "Mixing 2 KMnO4 -> K2MnO4 + MnO2 + O2: Heating potassium permanganate. Equation: 2 KMnO4 -> K2MnO4 + MnO2 + O2. Observations: o2; purple->green-black; none. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_kmn\u043e4",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Sulphuric acid (H2SO4)?",
+    "input": "make Sulphuric acid",
+    "output": "To make Sulphuric acid (H2SO4), you have 4 routes. Best: Electrolysis of copper(II) sulphate with inert electrodes: 2 CuSO4 + 2 H2O -> 2 Cu + 2 H2SO4 + O2. Bench: 2 CuSO4 + 2 H2O -> 2 Cu + 2 H2SO4 + O2. Observations: blue-fades; red-brown-at-cathode. Safety: None/5. Load 2 CuSO4 + 2 H2O onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "h2so4",
+    "category": "specific"
+  },
+  {
+    "instruction": "Make many salts",
+    "input": "make many salts",
+    "output": "Making many salts by selecting elements/molecules: Heavy water (D2O), Acetone (C3H6O), Methanol (CH4O), 1-Propanol (C3H8O), 2-Propanol (isopropyl alcohol) (C3H8O). Total 265 salts available. Each synthesis uses real lab reagents - no guesses. Try 'make Heavy water' for specific routes.",
+    "intent": "MAKE_MANY",
+    "target": "salt",
+    "category": "salt"
+  },
+  {
+    "instruction": "What can I make from Dubnium (solid, standard state) and Berkelium (solid, standard state)?",
+    "input": "what can I make from Dubnium (solid, standard state) and Berkelium (solid, standard state)?",
+    "output": "From Dubnium (solid, standard state) and Berkelium (solid, standard state), you can make compounds containing Db and Bk. Check element pair Db-Bk in combinations (9410 pairs). Put elem_db + elem_bk on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_db+elem_bk",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix NH4Cl?",
+    "input": "what happens if I mix NH4Cl?",
+    "output": "Mixing NH4Cl -> NH3 + HCl: 'Sublimation' of ammonium chloride. Equation: NH4Cl -> NH3 + HCl. Observations: fog; white-crust; it looks like sublimation but it is decomposition and recombination - white crystals reform on a cold part of the tube. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_nh4cl",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix 2 Al + 2 KOH + 6 H2O?",
+    "input": "what happens if I mix 2 Al + 2 KOH + 6 H2O?",
+    "output": "Mixing 2 Al + 2 KOH + 6 H2O -> 2 KAl(OH)4 + 3 H2: Making potassium alum from foil. Equation: 2 Al + 2 KOH + 6 H2O -> 2 KAl(OH)4 + 3 H2. Observations: h2; fizz; white-crystal. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_alum",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Titanium (solid, standard state) and Bismuth (solid, standard state)?",
+    "input": "what can I make from Titanium (solid, standard state) and Bismuth (solid, standard state)?",
+    "output": "From Titanium (solid, standard state) and Bismuth (solid, standard state), you can make compounds containing Ti and Bi. Check element pair Ti-Bi in combinations (9410 pairs). Put elem_ti + elem_bi on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_ti+elem_bi",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Beryllium (solid, standard state) and Dubnium (solid, standard state)?",
+    "input": "what can I make from Beryllium (solid, standard state) and Dubnium (solid, standard state)?",
+    "output": "From Beryllium (solid, standard state) and Dubnium (solid, standard state), you can make compounds containing Be and Db. Check element pair Be-Db in combinations (9410 pairs). Put elem_be + elem_db on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_be+elem_db",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Palladium (solid, standard state) and Hassium (solid, standard state)?",
+    "input": "what can I make from Palladium (solid, standard state) and Hassium (solid, standard state)?",
+    "output": "From Palladium (solid, standard state) and Hassium (solid, standard state), you can make compounds containing Pd and Hs. Check element pair Pd-Hs in combinations (9410 pairs). Put elem_pd + elem_hs on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_pd+elem_hs",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix CaCO3?",
+    "input": "what happens if I mix CaCO3?",
+    "output": "Mixing CaCO3 -> CaO + CO2: Limeside: heating calcium carbonate. Equation: CaCO3 -> CaO + CO2. Observations: co2; none; strongly heated (about 900 C) the limewater at the delivery tube turns milky. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_caco3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix NH3 + HCl?",
+    "input": "what happens if I mix NH3 + HCl?",
+    "output": "Mixing NH3 + HCl -> NH4Cl: Ammonia and hydrogen chloride meeting in air. Equation: NH3 + HCl -> NH4Cl. Observations: fog; white-smoke; white 'smoke' rings form in a dry tube as the two diffusing gases meet - the diffusion demonstration, and the rate ratio sqrt(36.5/17) = 1.46 sets where the ring forms. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_nh4cl",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Iron(II) hydroxide (Fe(OH)2)?",
+    "input": "make Iron(II) hydroxide",
+    "output": "To make Iron(II) hydroxide (Fe(OH)2), you have 1 routes. Best: Sodium hydroxide into iron(II) solution: FeSO4 + 2 NaOH -> Fe(OH)2 + Na2SO4. Bench: FeSO4 + 2 NaOH -> Fe(OH)2 + Na2SO4. Observations: green-white; dirty green at first, then a brown scum crawls down from the surface as air oxidises Fe(II) to Fe(III). Safety: None/5. Load FeSO4 + 2 NaOH onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "feoh2",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix C2H5OH?",
+    "input": "what happens if I mix C2H5OH?",
+    "output": "Mixing C2H5OH -> C2H4 + H2O: Ethanol over hot alumina. Equation: C2H5OH -> C2H4 + H2O. Observations: ethene; none; Al2O3 at 350 C gives ethene cleanly. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_c2h5oh_dehyd",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Tellurium (solid, standard state) and Rhenium (solid, standard state)?",
+    "input": "what can I make from Tellurium (solid, standard state) and Rhenium (solid, standard state)?",
+    "output": "From Tellurium (solid, standard state) and Rhenium (solid, standard state), you can make compounds containing Te and Re. Check element pair Te-Re in combinations (9410 pairs). Put elem_te + elem_re on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_te+elem_re",
+    "category": "mix"
+  },
+  {
+    "instruction": "How to make Sodium hydroxide (caustic soda) (NaOH)?",
+    "input": "make Sodium hydroxide (caustic soda)",
+    "output": "To make Sodium hydroxide (caustic soda) (NaOH), you have 4 routes. Best: Sodium on water: 2 Na + 2 H2O -> 2 NaOH + H2. Bench: 2 Na + 2 H2O -> 2 NaOH + H2. Observations: yellow-orange; hot. Safety: 3/5. Load 2 Na + 2 H2O onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "naoh",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix 2 Mg + O2?",
+    "input": "what happens if I mix 2 Mg + O2?",
+    "output": "Mixing 2 Mg + O2 -> 2 MgO: Burning magnesium ribbon. Equation: 2 Mg + O2 -> 2 MgO. Observations: dazzling-white; smoke; hot. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_mgo",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Hydrochloric acid (muriatic) (HCl)?",
+    "input": "make Hydrochloric acid (muriatic)",
+    "output": "To make Hydrochloric acid (muriatic) (HCl), you have 9 routes. Best: Sodium chloride with concentrated sulphuric acid: NaCl + H2SO4 -> NaHSO4 + HCl. Bench: NaCl + H2SO4 -> NaHSO4 + HCl. Observations: hcl; fog. Safety: 2/5. Load NaCl + H2SO4 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "hcl",
+    "category": "specific"
+  },
+  {
+    "instruction": "Make an base - show many bases with elements",
+    "input": "make an base",
+    "output": "You asked for bases - I found 34 bases in lab. Top 15: Aniline (C6H7N), Sodium hydroxide (caustic soda) (NaOH), Potassium hydroxide (caustic potash) (KOH), Calcium hydroxide (slaked lime) (Ca(OH)2), Barium hydroxide (baryta water) (Ba(OH)2). Each can be made by selecting elements/molecules. For example, to make Aniline, you need elements C, H, N. Use bench to combine them. Say 'make C6H7N in all ways' for detailed routes.",
+    "intent": "MAKE_MANY",
+    "target": "base",
+    "category": "base"
+  },
+  {
+    "instruction": "Synthesize HNO3",
+    "input": "make HNO3",
+    "output": "Synthesizing HNO3 (Nitric acid): KNO3 + H2SO4 -> KHSO4 + HNO3. Requires KNO3 + H2SO4. This is a synthesis, gas_gen reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "hno3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix 2 SO2 + O2?",
+    "input": "what happens if I mix 2 SO2 + O2?",
+    "output": "Mixing 2 SO2 + O2 -> 2 SO3: Contact-process oxidation of sulphur dioxide. Equation: 2 SO2 + O2 -> 2 SO3. Observations: V2O5 at 450 C and 1-2 atm; exothermic so lower T favours SO3 but the catalyst needs 400+ C - the classic compromise-conditions question; none. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_so3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Synthesize NH3",
+    "input": "make NH3",
+    "output": "Synthesizing NH3 (Ammonia solution (ammonium hydroxide)): Li3N + 3 H2O -> 3 LiOH + NH3. Requires Li3N + 3 H2O. This is a synthesis, pinned reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "nh4oh",
+    "category": "specific"
+  },
+  {
+    "instruction": "How to make Potassium carbonate (K2CO3)?",
+    "input": "make Potassium carbonate",
+    "output": "To make Potassium carbonate (K2CO3), you have 2 routes. Best: Permanganate and glycerol: 14 KMnO4 + 3 C3H8O3 -> 7 K2CO3 + 14 MnO2 + 2 CO2 + 12 H2O. Bench: 14 KMnO4 + 3 C3H8O3 -> 7 K2CO3 + 14 MnO2 + 2 CO2 + 12 H2O. Observations: spontaneous-ignite; smoke. Safety: 3/5. Load 14 KMnO4 + 3 C3H8O3 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "k2co3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Vanadium (solid, standard state) and Bismuth (solid, standard state)?",
+    "input": "what can I make from Vanadium (solid, standard state) and Bismuth (solid, standard state)?",
+    "output": "From Vanadium (solid, standard state) and Bismuth (solid, standard state), you can make compounds containing V and Bi. Check element pair V-Bi in combinations (9410 pairs). Put elem_v + elem_bi on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_v+elem_bi",
+    "category": "mix"
+  },
+  {
+    "instruction": "How to make Aluminium hydroxide (Al(OH)3)?",
+    "input": "make Aluminium hydroxide",
+    "output": "To make Aluminium hydroxide (Al(OH)3), you have 2 routes. Best: Aluminium sulphate with just enough sodium hydroxide: Al2(SO4)3 + 6 NaOH -> 2 Al(OH)3 + 3 Na2SO4. Bench: Al2(SO4)3 + 6 NaOH -> 2 Al(OH)3 + 3 Na2SO4. Observations: white-gel; dissolves again in excess NaOH (aluminate) AND in excess NH4OH? no - the hydroxide is INSOLUBLE in excess ammonia, which is precisely how you tell Al3+ from Zn2+ and Pb2+. Safety: None/5. Load Al2(SO4)3 + 6 NaOH onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "aloh3",
+    "category": "specific"
+  },
+  {
+    "instruction": "Synthesize H2SO3",
+    "input": "make H2SO3",
+    "output": "Synthesizing H2SO3 (Sulphurous acid (SO2 water)): SO2 + H2O -> H2SO3. Requires SO2 + H2O. This is a acid_base, hydrolysis reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "h2so3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix 2 H2O2?",
+    "input": "what happens if I mix 2 H2O2?",
+    "output": "Mixing 2 H2O2 -> 2 H2O + O2: Disproportionation of hydrogen peroxide. Equation: 2 H2O2 -> 2 H2O + O2. Observations: o2; fizz; warm. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_h2o2",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Potassium hydroxide (caustic potash) (KOH)?",
+    "input": "make Potassium hydroxide (caustic potash)",
+    "output": "To make Potassium hydroxide (caustic potash) (KOH), you have 3 routes. Best: Potassium on water: 2 K + 2 H2O -> 2 KOH + H2. Bench: 2 K + 2 H2O -> 2 KOH + H2. Observations: lilac; hot. Safety: 3/5. Load 2 K + 2 H2O onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "koh",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Moscovium (solid, standard state) and Yttrium (solid, standard state)?",
+    "input": "what can I make from Moscovium (solid, standard state) and Yttrium (solid, standard state)?",
+    "output": "From Moscovium (solid, standard state) and Yttrium (solid, standard state), you can make compounds containing Mc and Y. Check element pair Mc-Y in combinations (9410 pairs). Put elem_mc + elem_y on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_mc+elem_y",
+    "category": "mix"
+  },
+  {
+    "instruction": "Synthesize H2O",
+    "input": "make H2O",
+    "output": "Synthesizing H2O (Water): 2 H2 + O2 -> 2 H2O. Requires 2 H2 + O2. This is a synthesis, pinned reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "water",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix 2 Cu + O2?",
+    "input": "what happens if I mix 2 Cu + O2?",
+    "output": "Mixing 2 Cu + O2 -> 2 CuO: Removing oxygen from air by heated copper. Equation: 2 Cu + O2 -> 2 CuO. Observations: red-brown->black; hot; passed repeatedly over heated copper turnings the residual gas is about 79 % N2 - the classic 'rough determination of the composition of air'. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_n2_cu",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Ethanoic (acetic) acid, glacial (C2H4O2)?",
+    "input": "make Ethanoic (acetic) acid, glacial",
+    "output": "To make Ethanoic (acetic) acid, glacial (C2H4O2), you have 2 routes. Best: Hydrogen sulphide on lead acetate paper: H2S + (CH3COO)2Pb -> PbS + 2 CH3COOH. Bench: H2S + (CH3COO)2Pb -> PbS + 2 CH3COOH. Observations: black; the fastest H2S test in existence and the reason old lead-frame oil paintings blacken in town air. Safety: 3/5. Load H2S + (CH3COO)2Pb onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "aceticacid",
+    "category": "specific"
+  },
+  {
+    "instruction": "Synthesize K2CO3",
+    "input": "make K2CO3",
+    "output": "Synthesizing K2CO3 (Potassium carbonate): 14 KMnO4 + 3 C3H8O3 -> 7 K2CO3 + 14 MnO2 + 2 CO2 + 12 H2O. Requires 14 KMnO4 + 3 C3H8O3. This is a redox, kinetics reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "k2co3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Boron (solid, standard state) and Tungsten (solid, standard state)?",
+    "input": "what can I make from Boron (solid, standard state) and Tungsten (solid, standard state)?",
+    "output": "From Boron (solid, standard state) and Tungsten (solid, standard state), you can make compounds containing B and W. Check element pair B-W in combinations (9410 pairs). Put elem_b + elem_w on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_b+elem_w",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Vanadium (solid, standard state) and Meitnerium (solid, standard state)?",
+    "input": "what can I make from Vanadium (solid, standard state) and Meitnerium (solid, standard state)?",
+    "output": "From Vanadium (solid, standard state) and Meitnerium (solid, standard state), you can make compounds containing V and Mt. Check element pair V-Mt in combinations (9410 pairs). Put elem_v + elem_mt on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_v+elem_mt",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Lutetium (solid, standard state) and Ytterbium (solid, standard state)?",
+    "input": "what can I make from Lutetium (solid, standard state) and Ytterbium (solid, standard state)?",
+    "output": "From Lutetium (solid, standard state) and Ytterbium (solid, standard state), you can make compounds containing Lu and Yb. Check element pair Lu-Yb in combinations (9410 pairs). Put elem_lu + elem_yb on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_lu+elem_yb",
+    "category": "mix"
+  },
+  {
+    "instruction": "Make an acid - show many acids with elements",
+    "input": "make an acid",
+    "output": "You asked for acids - I found 46 acids in lab. Top 15: Phenol (carbolic acid) (C6H6O), Benzoic acid (C7H6O2), Potassium hydrogen phthalate (primary standard) (KHC8H4O4), Salicylic acid (C7H6O3), Methanoic (formic) acid (CH2O2). Each can be made by selecting elements/molecules. For example, to make Phenol (carbolic acid), you need elements C, H, O. Use bench to combine them. Say 'make C6H6O in all ways' for detailed routes.",
+    "intent": "MAKE_MANY",
+    "target": "acid",
+    "category": "acid"
+  },
+  {
+    "instruction": "Synthesize Cu(OH)2",
+    "input": "make Cu(OH)2",
+    "output": "Synthesizing Cu(OH)2 (Copper(II) hydroxide): CuSO4 + 2 NaOH -> Cu(OH)2 + Na2SO4. Requires CuSO4 + 2 NaOH. This is a metathesis, precip reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "cuoh2",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix SO3 + H2SO4?",
+    "input": "what happens if I mix SO3 + H2SO4?",
+    "output": "Mixing SO3 + H2SO4 -> H2S2O7: Absorbing SO3 in sulphuric acid (oleum). Equation: SO3 + H2SO4 -> H2S2O7. Observations: you never bubble SO3 into water - the mist is unstoppable, so concentrated H2SO4 absorbs it and the oleum is diluted later; none. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_h2so4",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Thallium (solid, standard state) and Fermium (solid, standard state)?",
+    "input": "what can I make from Thallium (solid, standard state) and Fermium (solid, standard state)?",
+    "output": "From Thallium (solid, standard state) and Fermium (solid, standard state), you can make compounds containing Tl and Fm. Check element pair Tl-Fm in combinations (9410 pairs). Put elem_tl + elem_fm on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_tl+elem_fm",
+    "category": "mix"
+  },
+  {
+    "instruction": "Make many acids",
+    "input": "make many acids",
+    "output": "Making many acids by selecting elements/molecules: Phenol (carbolic acid) (C6H6O), Benzoic acid (C7H6O2), Potassium hydrogen phthalate (primary standard) (KHC8H4O4), Salicylic acid (C7H6O3), Methanoic (formic) acid (CH2O2). Total 46 acids available. Each synthesis uses real lab reagents - no guesses. Try 'make Phenol (carbolic acid)' for specific routes.",
+    "intent": "MAKE_MANY",
+    "target": "acid",
+    "category": "acid"
+  },
+  {
+    "instruction": "What can I make from Cadmium (solid, standard state) and Californium (solid, standard state)?",
+    "input": "what can I make from Cadmium (solid, standard state) and Californium (solid, standard state)?",
+    "output": "From Cadmium (solid, standard state) and Californium (solid, standard state), you can make compounds containing Cd and Cf. Check element pair Cd-Cf in combinations (9410 pairs). Put elem_cd + elem_cf on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_cd+elem_cf",
+    "category": "mix"
+  },
+  {
+    "instruction": "Synthesize Na2CO3",
+    "input": "make Na2CO3",
+    "output": "Synthesizing Na2CO3 (Sodium carbonate (washing soda, anhydrous)): 2 NaHCO3 -> Na2CO3 + H2O + CO2. Requires 2 NaHCO3. This is a decomposition, pinned reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "na2co3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Niobium (solid, standard state) and Tantalum (solid, standard state)?",
+    "input": "what can I make from Niobium (solid, standard state) and Tantalum (solid, standard state)?",
+    "output": "From Niobium (solid, standard state) and Tantalum (solid, standard state), you can make compounds containing Nb and Ta. Check element pair Nb-Ta in combinations (9410 pairs). Put elem_nb + elem_ta on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_nb+elem_ta",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Tellurium (solid, standard state) and Krypton (gas, standard state)?",
+    "input": "what can I make from Tellurium (solid, standard state) and Krypton (gas, standard state)?",
+    "output": "From Tellurium (solid, standard state) and Krypton (gas, standard state), you can make compounds containing Te and Kr. Check element pair Te-Kr in combinations (9410 pairs). Put elem_te + elem_kr on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_te+elem_kr",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix Li3N + 3 H2O?",
+    "input": "what happens if I mix Li3N + 3 H2O?",
+    "output": "Mixing Li3N + 3 H2O -> 3 LiOH + NH3: Lithium nitride hydrolysis (lab route to NH3). Equation: Li3N + 3 H2O -> 3 LiOH + NH3. Observations: ammonia; fizz; the only nitride that hydrolyses readily enough to be a textbook source of ammonia. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_ammonia_synth",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Germanium (solid, standard state) and Cadmium (solid, standard state)?",
+    "input": "what can I make from Germanium (solid, standard state) and Cadmium (solid, standard state)?",
+    "output": "From Germanium (solid, standard state) and Cadmium (solid, standard state), you can make compounds containing Ge and Cd. Check element pair Ge-Cd in combinations (9410 pairs). Put elem_ge + elem_cd on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_ge+elem_cd",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix 2 Na + H2?",
+    "input": "what happens if I mix 2 Na + H2?",
+    "output": "Mixing 2 Na + H2 -> 2 NaH: Sodium with hydrogen. Equation: 2 Na + H2 -> 2 NaH. Observations: hot; white; hydrogen here is H-, so NaH tears protons off water and releases H2 - the 'hydride as a base' idea. Safety: danger 3/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_hydride",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Moscovium (solid, standard state) and Antimony (solid, standard state)?",
+    "input": "what can I make from Moscovium (solid, standard state) and Antimony (solid, standard state)?",
+    "output": "From Moscovium (solid, standard state) and Antimony (solid, standard state), you can make compounds containing Mc and Sb. Check element pair Mc-Sb in combinations (9410 pairs). Put elem_mc + elem_sb on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_mc+elem_sb",
+    "category": "mix"
+  },
+  {
+    "instruction": "Synthesize C2H3NaO2",
+    "input": "make C2H3NaO2",
+    "output": "Synthesizing C2H3NaO2 (Sodium ethanoate (acetate) anhydrous): CH3COCH3 + 3 I2 + 4 NaOH -> CHI3 + CH3COONa + 3 NaI + 3 H2O. Requires CH3COCH3 + 3 I2 + 4 NaOH. This is a organic_test, pinned reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "ch3coona",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix 2 Pb(NO3)2?",
+    "input": "what happens if I mix 2 Pb(NO3)2?",
+    "output": "Mixing 2 Pb(NO3)2 -> 2 PbO + 4 NO2 + O2: Thermal decomposition of lead nitrate. Equation: 2 Pb(NO3)2 -> 2 PbO + 4 NO2 + O2. Observations: no2; o2; white->yellow. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_pbnitrate",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Synthesize Fe(OH)3",
+    "input": "make Fe(OH)3",
+    "output": "Synthesizing Fe(OH)3 (Iron(III) hydroxide): FeCl3 + 3 NaOH -> Fe(OH)3 + 3 NaCl. Requires FeCl3 + 3 NaOH. This is a metathesis, precip reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "feoh3",
+    "category": "specific"
+  },
+  {
+    "instruction": "How to make Ethyl acetate (C4H8O2)?",
+    "input": "make Ethyl acetate",
+    "output": "To make Ethyl acetate (C4H8O2), you have 2 routes. Best: Esterification of ethanol with ethanoic acid: C2H5OH + CH3COOH -> CH3COOC2H5 + H2O. Bench: C2H5OH + CH3COOH -> CH3COOC2H5 + H2O. Observations: pear-drop; none. Safety: None/5. Load C2H5OH + CH3COOH onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "ethylacetate",
+    "category": "specific"
+  },
+  {
+    "instruction": "Synthesize KOH",
+    "input": "make KOH",
+    "output": "Synthesizing KOH (Potassium hydroxide (caustic potash)): 2 K + 2 H2O -> 2 KOH + H2. Requires 2 K + 2 H2O. This is a displacement, redox reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "koh",
+    "category": "specific"
+  },
+  {
+    "instruction": "How to make Water (H2O)?",
+    "input": "make Water",
+    "output": "To make Water (H2O), you have 64 routes. Best: Burning hydrogen to water: 2 H2 + O2 -> 2 H2O. Bench: 2 H2 + O2 -> 2 H2O. Observations: pop; none. Safety: 2/5. Load 2 H2 + O2 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "water",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix Zn + H2SO4?",
+    "input": "what happens if I mix Zn + H2SO4?",
+    "output": "Mixing Zn + H2SO4 -> ZnSO4 + H2: Zinc with dilute sulphuric acid (salt prep). Equation: Zn + H2SO4 -> ZnSO4 + H2. Observations: h2; fizz; warm. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_znso4",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Make many acids by selecting elements",
+    "input": "make many acid by selecting the elements/molecule",
+    "output": "Making many acids by selecting elements/molecules: Found 27 acids. Examples: HCl (H+Cl) via NaCl+H2SO4->NaHSO4+HCl, H2SO4 (H2+S+O4) via SO3+H2O->H2SO4, HNO3 (H+N+O3) via KNO3+H2SO4->KHSO4+HNO3, acetic acid C2H4O2 (C2+H4+O2) via oxidation. Each acid's elements are its building blocks - put them on bench to synthesize. Say 'make HCl in all ways' for 9 routes.",
+    "intent": "MAKE_MANY",
+    "target": "acid",
+    "category": "acid"
+  },
+  {
+    "instruction": "What happens when I mix BaSO4?",
+    "input": "what happens if I mix BaSO4?",
+    "output": "Mixing BaSO4 -> BaO + SO3: Strongly heating copper sulphate vs barium sulphate. Equation: BaSO4 -> BaO + SO3. Observations: BaSO4 essentially refuses to decompose below 1580 C - the reason barite is the refractory filler and why 'acid insoluble' is a real phrase in analysis. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_sulphate",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Iron(III) hydroxide (Fe(OH)3)?",
+    "input": "make Iron(III) hydroxide",
+    "output": "To make Iron(III) hydroxide (Fe(OH)3), you have 3 routes. Best: Sodium hydroxide into iron(III) solution: FeCl3 + 3 NaOH -> Fe(OH)3 + 3 NaCl. Bench: FeCl3 + 3 NaOH -> Fe(OH)3 + 3 NaCl. Observations: rust-brown-gel; insoluble in excess alkali. Safety: None/5. Load FeCl3 + 3 NaOH onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "feoh3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Gadolinium (solid, standard state) and Rutherfordium (solid, standard state)?",
+    "input": "what can I make from Gadolinium (solid, standard state) and Rutherfordium (solid, standard state)?",
+    "output": "From Gadolinium (solid, standard state) and Rutherfordium (solid, standard state), you can make compounds containing Gd and Rf. Check element pair Gd-Rf in combinations (9410 pairs). Put elem_gd + elem_rf on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_gd+elem_rf",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Praseodymium (solid, standard state) and Uranium (solid, standard state)?",
+    "input": "what can I make from Praseodymium (solid, standard state) and Uranium (solid, standard state)?",
+    "output": "From Praseodymium (solid, standard state) and Uranium (solid, standard state), you can make compounds containing Pr and U. Check element pair Pr-U in combinations (9410 pairs). Put elem_pr + elem_u on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_pr+elem_u",
+    "category": "mix"
+  },
+  {
+    "instruction": "Synthesize C6H5NO2",
+    "input": "make C6H5NO2",
+    "output": "Synthesizing C6H5NO2 (Nitrobenzene): C6H6 + HNO3 -> C6H5NO2 + H2O. Requires C6H6 + HNO3. This is a organic_synth, substitution reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "nitrobenzene",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix P4 + 5 O2?",
+    "input": "what happens if I mix P4 + 5 O2?",
+    "output": "Mixing P4 + 5 O2 -> P4O10: Burning phosphorus and testing the smoke. Equation: P4 + 5 O2 -> P4O10. Observations: bright-white; hot; smoke. Safety: danger 3/5, restricted.",
+    "intent": "EXPLORE",
+    "target": "syn_p4o10",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Einsteinium (solid, standard state) and Niobium (solid, standard state)?",
+    "input": "what can I make from Einsteinium (solid, standard state) and Niobium (solid, standard state)?",
+    "output": "From Einsteinium (solid, standard state) and Niobium (solid, standard state), you can make compounds containing Es and Nb. Check element pair Es-Nb in combinations (9410 pairs). Put elem_es + elem_nb on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_es+elem_nb",
+    "category": "mix"
+  },
+  {
+    "instruction": "Make many oxides",
+    "input": "make many oxides",
+    "output": "Making many oxides by selecting elements/molecules: Hydrogen peroxide (H2O2), Sodium hydroxide (caustic soda) (NaOH), Potassium hydroxide (caustic potash) (KOH), Calcium hydroxide (slaked lime) (Ca(OH)2), Barium hydroxide (baryta water) (Ba(OH)2). Total 55 oxides available. Each synthesis uses real lab reagents - no guesses. Try 'make Hydrogen peroxide' for specific routes.",
+    "intent": "MAKE_MANY",
+    "target": "oxide",
+    "category": "oxide"
+  },
+  {
+    "instruction": "What happens when I mix MgCO3?",
+    "input": "what happens if I mix MgCO3?",
+    "output": "Mixing MgCO3 -> MgO + CO2: Group-2 carbonates going off CO2 down the group. Equation: MgCO3 -> MgO + CO2. Observations: co2; MgCO3 about 350 C, CaCO3 900 C, BaCO3 1450 C - the thermal stability trend follows decreasing polarising power of the bigger cation; run all three and time the limewater clouding. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_carbonate",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Krypton (gas, standard state) and Holmium (solid, standard state)?",
+    "input": "what can I make from Krypton (gas, standard state) and Holmium (solid, standard state)?",
+    "output": "From Krypton (gas, standard state) and Holmium (solid, standard state), you can make compounds containing Kr and Ho. Check element pair Kr-Ho in combinations (9410 pairs). Put elem_kr + elem_ho on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_kr+elem_ho",
+    "category": "mix"
+  },
+  {
+    "instruction": "Synthesize H2CO3",
+    "input": "make H2CO3",
+    "output": "Synthesizing H2CO3 (Carbonic acid): H2O + CO2 -> H2CO3. Requires H2O + CO2. This is a acid_base, hydrolysis reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "h2co3",
+    "category": "specific"
+  },
+  {
+    "instruction": "How to make Sodium hydrogencarbonate (baking soda) (NaHCO3)?",
+    "input": "make Sodium hydrogencarbonate (baking soda)",
+    "output": "To make Sodium hydrogencarbonate (baking soda) (NaHCO3), you have 3 routes. Best: Solvay step: carbonating ammoniated brine: NaCl + NH3 + CO2 + H2O -> NaHCO3 + NH4Cl. Bench: NaCl + NH3 + CO2 + H2O -> NaHCO3 + NH4Cl. Observations: white-crystal; NaHCO3 precipitates because it is the least soluble of the four salts present at 15 C - the whole process is a Ksp argument. Safety: None/5. Load NaCl + NH3 + CO2 + H2O onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "nahco3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix CuO + H2SO4?",
+    "input": "what happens if I mix CuO + H2SO4?",
+    "output": "Mixing CuO + H2SO4 -> CuSO4 + H2O: Making copper(II) sulphate from copper oxide. Equation: CuO + H2SO4 -> CuSO4 + H2O. Observations: black-dissolves->blue; none; add excess CuO to warm dilute acid, filter the surplus, then evaporate to crystallise - the canonical 'prepare a soluble salt' method. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_cuso4",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Meitnerium (solid, standard state) and Gadolinium (solid, standard state)?",
+    "input": "what can I make from Meitnerium (solid, standard state) and Gadolinium (solid, standard state)?",
+    "output": "From Meitnerium (solid, standard state) and Gadolinium (solid, standard state), you can make compounds containing Mt and Gd. Check element pair Mt-Gd in combinations (9410 pairs). Put elem_mt + elem_gd on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_mt+elem_gd",
+    "category": "mix"
+  },
+  {
+    "instruction": "Make many bases",
+    "input": "make many bases",
+    "output": "Making many bases by selecting elements/molecules: Aniline (C6H7N), Sodium hydroxide (caustic soda) (NaOH), Potassium hydroxide (caustic potash) (KOH), Calcium hydroxide (slaked lime) (Ca(OH)2), Barium hydroxide (baryta water) (Ba(OH)2). Total 34 bases available. Each synthesis uses real lab reagents - no guesses. Try 'make Aniline' for specific routes.",
+    "intent": "MAKE_MANY",
+    "target": "base",
+    "category": "base"
+  },
+  {
+    "instruction": "What happens when I mix 6 C4H6O6?",
+    "input": "what happens if I mix 6 C4H6O6?",
+    "output": "Mixing 6 C4H6O6 -> 5 C3H4O2 + 9 CO2 + 8 H2O: Rochelle salt / tartaric acid pyrolysis. Equation: 6 C4H6O6 -> 5 C3H4O2 + 9 CO2 + 8 H2O. Observations: burnt-sugar; white->brown; tartaric acid gives pyruvic aldehyde - the 'volatile oil' smell of the tartrate test in analysis. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_tartrate",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Beryllium (solid, standard state) and Mendelevium (solid, standard state)?",
+    "input": "what can I make from Beryllium (solid, standard state) and Mendelevium (solid, standard state)?",
+    "output": "From Beryllium (solid, standard state) and Mendelevium (solid, standard state), you can make compounds containing Be and Md. Check element pair Be-Md in combinations (9410 pairs). Put elem_be + elem_md on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_be+elem_md",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Rutherfordium (solid, standard state) and Zirconium (solid, standard state)?",
+    "input": "what can I make from Rutherfordium (solid, standard state) and Zirconium (solid, standard state)?",
+    "output": "From Rutherfordium (solid, standard state) and Zirconium (solid, standard state), you can make compounds containing Rf and Zr. Check element pair Rf-Zr in combinations (9410 pairs). Put elem_rf + elem_zr on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_rf+elem_zr",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Fermium (solid, standard state) and Tennessine (solid, standard state)?",
+    "input": "what can I make from Fermium (solid, standard state) and Tennessine (solid, standard state)?",
+    "output": "From Fermium (solid, standard state) and Tennessine (solid, standard state), you can make compounds containing Fm and Ts. Check element pair Fm-Ts in combinations (9410 pairs). Put elem_fm + elem_ts on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_fm+elem_ts",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix CO + 2 H2?",
+    "input": "what happens if I mix CO + 2 H2?",
+    "output": "Mixing CO + 2 H2 -> CH3OH: Industrial methanol. Equation: CO + 2 H2 -> CH3OH. Observations: Cu/ZnO/Al2O3 at 250 C and 50-100 atm; the same catalyst family that methanol fuel cells use; none. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_methanol",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix 2 KClO3?",
+    "input": "what happens if I mix 2 KClO3?",
+    "output": "Mixing 2 KClO3 -> 2 KCl + 3 O2: Chlorate decomposition with a catalyst. Equation: 2 KClO3 -> 2 KCl + 3 O2. Observations: o2; fizz; MnO2 lowers the changeover from about 400 C (which first gives KClO4 + KCl) to about 160 C and the oxygen relights a glowing splint. Safety: danger 3/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_kclo3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix 2 PbO2?",
+    "input": "what happens if I mix 2 PbO2?",
+    "output": "Mixing 2 PbO2 -> 2 PbO + O2: Lead dioxide giving up oxygen. Equation: 2 PbO2 -> 2 PbO + O2. Observations: o2; black->yellow; none. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_pbo2",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Terbium (solid, standard state) and Tennessine (solid, standard state)?",
+    "input": "what can I make from Terbium (solid, standard state) and Tennessine (solid, standard state)?",
+    "output": "From Terbium (solid, standard state) and Tennessine (solid, standard state), you can make compounds containing Tb and Ts. Check element pair Tb-Ts in combinations (9410 pairs). Put elem_tb + elem_ts on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_tb+elem_ts",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Terbium (solid, standard state) and Titanium (solid, standard state)?",
+    "input": "what can I make from Terbium (solid, standard state) and Titanium (solid, standard state)?",
+    "output": "From Terbium (solid, standard state) and Titanium (solid, standard state), you can make compounds containing Tb and Ti. Check element pair Tb-Ti in combinations (9410 pairs). Put elem_tb + elem_ti on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_tb+elem_ti",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix 2 NaHCO3?",
+    "input": "what happens if I mix 2 NaHCO3?",
+    "output": "Mixing 2 NaHCO3 -> Na2CO3 + H2O + CO2: Heating sodium hydrogencarbonate. Equation: 2 NaHCO3 -> Na2CO3 + H2O + CO2. Observations: co2; droplets; water condenses near the mouth (tilt the tube down!), and the residue still fizzes with acid but is now the normal carbonate. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_nahco3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix Fe + H2SO4?",
+    "input": "what happens if I mix Fe + H2SO4?",
+    "output": "Mixing Fe + H2SO4 -> FeSO4 + H2: Iron nails in dilute sulphuric acid. Equation: Fe + H2SO4 -> FeSO4 + H2. Observations: h2; fizz; colourless->pale-green. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_feso4",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Rhodium (solid, standard state) and Plutonium (solid, standard state)?",
+    "input": "what can I make from Rhodium (solid, standard state) and Plutonium (solid, standard state)?",
+    "output": "From Rhodium (solid, standard state) and Plutonium (solid, standard state), you can make compounds containing Rh and Pu. Check element pair Rh-Pu in combinations (9410 pairs). Put elem_rh + elem_pu on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_rh+elem_pu",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Helium (gas, standard state) and Lawrencium (solid, standard state)?",
+    "input": "what can I make from Helium (gas, standard state) and Lawrencium (solid, standard state)?",
+    "output": "From Helium (gas, standard state) and Lawrencium (solid, standard state), you can make compounds containing He and Lr. Check element pair He-Lr in combinations (9410 pairs). Put elem_he + elem_lr on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_he+elem_lr",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Meitnerium (solid, standard state) and Terbium (solid, standard state)?",
+    "input": "what can I make from Meitnerium (solid, standard state) and Terbium (solid, standard state)?",
+    "output": "From Meitnerium (solid, standard state) and Terbium (solid, standard state), you can make compounds containing Mt and Tb. Check element pair Mt-Tb in combinations (9410 pairs). Put elem_mt + elem_tb on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_mt+elem_tb",
+    "category": "mix"
+  },
+  {
+    "instruction": "How to make Ethanol (rectified spirit) (C2H6O)?",
+    "input": "make Ethanol (rectified spirit)",
+    "output": "To make Ethanol (rectified spirit) (C2H6O), you have 1 routes. Best: Hydrolysis of ethyl acetate (and following it): CH3COOC2H5 + H2O -> CH3COOH + C2H5OH. Bench: CH3COOC2H5 + H2O -> CH3COOH + C2H5OH. Observations: titrate 5 mL samples out of the flask every 5 minutes against standard NaOH with phenolphthalein; the acid count rises and levels off - a kinetics AND an equilibrium experiment from one bottle, and the rate constant comes out of your own graph. Safety: None/5. Load CH3COOC2H5 + H2O onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "ethanol",
+    "category": "specific"
+  },
+  {
+    "instruction": "Make an oxide - show many oxides with elements",
+    "input": "make an oxide",
+    "output": "You asked for oxides - I found 55 oxides in lab. Top 15: Hydrogen peroxide (H2O2), Sodium hydroxide (caustic soda) (NaOH), Potassium hydroxide (caustic potash) (KOH), Calcium hydroxide (slaked lime) (Ca(OH)2), Barium hydroxide (baryta water) (Ba(OH)2). Each can be made by selecting elements/molecules. For example, to make Hydrogen peroxide, you need elements H, O. Use bench to combine them. Say 'make H2O2 in all ways' for detailed routes.",
+    "intent": "MAKE_MANY",
+    "target": "oxide",
+    "category": "oxide"
+  },
+  {
+    "instruction": "What happens when I mix H2C2O4?",
+    "input": "what happens if I mix H2C2O4?",
+    "output": "Mixing H2C2O4 -> CO + CO2 + H2O: Oxalic acid losing CO and CO2. Equation: H2C2O4 -> CO + CO2 + H2O. Observations: co; co2; concentrated H2SO4 both dehydrates and drives it. Safety: danger 3/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_oxalate",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Neptunium (solid, standard state) and Erbium (solid, standard state)?",
+    "input": "what can I make from Neptunium (solid, standard state) and Erbium (solid, standard state)?",
+    "output": "From Neptunium (solid, standard state) and Erbium (solid, standard state), you can make compounds containing Np and Er. Check element pair Np-Er in combinations (9410 pairs). Put elem_np + elem_er on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_np+elem_er",
+    "category": "mix"
+  },
+  {
+    "instruction": "Synthesize CH4O",
+    "input": "make CH4O",
+    "output": "Synthesizing CH4O (Methanol): CO + 2 H2 -> CH3OH. Requires CO + 2 H2. This is a synthesis, pinned reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "methanol",
+    "category": "specific"
+  },
+  {
+    "instruction": "Make an gas - show many gass with elements",
+    "input": "make an gas",
+    "output": "You asked for gass - I found 28 gass in lab. Top 15: Diborane (reference only) (B2H6), Ammonia gas (dry) (NH3), Carbon dioxide (CO2), Oxygen (O2), Hydrogen (H2). Each can be made by selecting elements/molecules. For example, to make Diborane (reference only), you need elements B, H. Use bench to combine them. Say 'make B2H6 in all ways' for detailed routes.",
+    "intent": "MAKE_MANY",
+    "target": "gas",
+    "category": "gas"
+  },
+  {
+    "instruction": "How to make Magnesium oxide (magnesia) (MgO)?",
+    "input": "make Magnesium oxide (magnesia)",
+    "output": "To make Magnesium oxide (magnesia) (MgO), you have 4 routes. Best: Burning magnesium ribbon: 2 Mg + O2 -> 2 MgO. Bench: 2 Mg + O2 -> 2 MgO. Observations: dazzling-white; smoke. Safety: 2/5. Load 2 Mg + O2 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "mgo",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Radium (solid, standard state) and Beryllium (solid, standard state)?",
+    "input": "what can I make from Radium (solid, standard state) and Beryllium (solid, standard state)?",
+    "output": "From Radium (solid, standard state) and Beryllium (solid, standard state), you can make compounds containing Ra and Be. Check element pair Ra-Be in combinations (9410 pairs). Put elem_ra + elem_be on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_ra+elem_be",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix 2 Cu(NO3)2?",
+    "input": "what happens if I mix 2 Cu(NO3)2?",
+    "output": "Mixing 2 Cu(NO3)2 -> 2 CuO + 4 NO2 + O2: Thermal decomposition of copper nitrate. Equation: 2 Cu(NO3)2 -> 2 CuO + 4 NO2 + O2. Observations: no2; blue->black; none. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_cunitrate",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix N2 + 3 H2?",
+    "input": "what happens if I mix N2 + 3 H2?",
+    "output": "Mixing N2 + 3 H2 -> 2 NH3: Haber synthesis of ammonia. Equation: N2 + 3 H2 -> 2 NH3. Observations: industrial conditions 450 C, 200 atm, Fe promoter with K2O/Al2O3; the reaction is reversible so only about 15 % conversion per pass and the gas is condensed out; none. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_nh3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix 2 Al + Fe2O3?",
+    "input": "what happens if I mix 2 Al + Fe2O3?",
+    "output": "Mixing 2 Al + Fe2O3 -> Al2O3 + 2 Fe: Thermite reduction of iron oxide. Equation: 2 Al + Fe2O3 -> Al2O3 + 2 Fe. Observations: brilliant; hot; grey-metallic-lump. Safety: danger 3/5, restricted.",
+    "intent": "EXPLORE",
+    "target": "syn_al2o3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Explain how to make any chemical",
+    "input": "make anything",
+    "output": "I can make anything in lab by: 1. Parsing your request (make water, make an acid, make H2SO4). 2. Searching 582 substances. 3. Finding all synthesis routes from 424 reactions + 380 ion pairs + 9410 element combos. 4. Ranking by observations, safety, richness. 5. Auto-loading bench with 1-4 bottles. Try specific: 'make water', 'make an acid', 'make many salts'.",
+    "intent": "EXPLAIN",
+    "target": "any",
+    "category": "general"
+  },
+  {
+    "instruction": "What happens when I mix CO + Cl2?",
+    "input": "what happens if I mix CO + Cl2?",
+    "output": "Mixing CO + Cl2 -> COCl2: Carbon monoxide with chlorine (reference). Equation: CO + Cl2 -> COCl2. Observations: COCl2 (phosgene) is a WWI poison and a modern feedstock; reference equation only, no bottle - the sim shows it greyed-out with the hazard text. Safety: danger 3/5, blocked.",
+    "intent": "EXPLORE",
+    "target": "syn_phosgene_ref",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix 2 NaNO3?",
+    "input": "what happens if I mix 2 NaNO3?",
+    "output": "Mixing 2 NaNO3 -> 2 NaNO2 + O2: Sodium nitrate to nitrite. Equation: 2 NaNO3 -> 2 NaNO2 + O2. Observations: o2; none; white->white. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_nano3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Sodium carbonate (washing soda, anhydrous) (Na2CO3)?",
+    "input": "make Sodium carbonate (washing soda, anhydrous)",
+    "output": "To make Sodium carbonate (washing soda, anhydrous) (Na2CO3), you have 1 routes. Best: Heating sodium hydrogencarbonate: 2 NaHCO3 -> Na2CO3 + H2O + CO2. Bench: 2 NaHCO3 -> Na2CO3 + H2O + CO2. Observations: co2; droplets. Safety: None/5. Load 2 NaHCO3 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "na2co3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Meitnerium (solid, standard state) and Molybdenum (solid, standard state)?",
+    "input": "what can I make from Meitnerium (solid, standard state) and Molybdenum (solid, standard state)?",
+    "output": "From Meitnerium (solid, standard state) and Molybdenum (solid, standard state), you can make compounds containing Mt and Mo. Check element pair Mt-Mo in combinations (9410 pairs). Put elem_mt + elem_mo on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_mt+elem_mo",
+    "category": "mix"
+  },
+  {
+    "instruction": "Synthesize HBr",
+    "input": "make HBr",
+    "output": "Synthesizing HBr (Hydrobromic acid): C6H5NH2 + 3 Br2 -> C6H2Br3NH2 + 3 HBr. Requires C6H5NH2 + 3 Br2. This is a organic_test, substitution reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "hbr",
+    "category": "specific"
+  },
+  {
+    "instruction": "Make an organic - show many organics with elements",
+    "input": "make an organic",
+    "output": "You asked for organics - I found 132 organics in lab. Top 15: Acetone (C3H6O), Ethanol (rectified spirit) (C2H6O), Methanol (CH4O), 1-Propanol (C3H8O), 2-Propanol (isopropyl alcohol) (C3H8O). Each can be made by selecting elements/molecules. For example, to make Acetone, you need elements C, H, O. Use bench to combine them. Say 'make C3H6O in all ways' for detailed routes.",
+    "intent": "MAKE_MANY",
+    "target": "organic",
+    "category": "organic"
+  },
+  {
+    "instruction": "Make an salt - show many salts with elements",
+    "input": "make an salt",
+    "output": "You asked for salts - I found 265 salts in lab. Top 15: Heavy water (D2O), Acetone (C3H6O), Methanol (CH4O), 1-Propanol (C3H8O), 2-Propanol (isopropyl alcohol) (C3H8O). Each can be made by selecting elements/molecules. For example, to make Heavy water, you need elements D, O. Use bench to combine them. Say 'make D2O in all ways' for detailed routes.",
+    "intent": "MAKE_MANY",
+    "target": "salt",
+    "category": "salt"
+  },
+  {
+    "instruction": "What can I make from Radium (solid, standard state) and Praseodymium (solid, standard state)?",
+    "input": "what can I make from Radium (solid, standard state) and Praseodymium (solid, standard state)?",
+    "output": "From Radium (solid, standard state) and Praseodymium (solid, standard state), you can make compounds containing Ra and Pr. Check element pair Ra-Pr in combinations (9410 pairs). Put elem_ra + elem_pr on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_ra+elem_pr",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix 3 Mg + N2?",
+    "input": "what happens if I mix 3 Mg + N2?",
+    "output": "Mixing 3 Mg + N2 -> Mg3N2: Magnesium burning in nitrogen. Equation: 3 Mg + N2 -> Mg3N2. Observations: the only common metal that combines with nitrogen on ordinary burning; the product fumes ammonia with water; pale-yellow. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_mg3n2",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Tungsten (solid, standard state) and Lanthanum (solid, standard state)?",
+    "input": "what can I make from Tungsten (solid, standard state) and Lanthanum (solid, standard state)?",
+    "output": "From Tungsten (solid, standard state) and Lanthanum (solid, standard state), you can make compounds containing W and La. Check element pair W-La in combinations (9410 pairs). Put elem_w + elem_la on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_w+elem_la",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix CuSO4.5H2O?",
+    "input": "what happens if I mix CuSO4.5H2O?",
+    "output": "Mixing CuSO4.5H2O -> CuSO4 + 5 H2O: Dehydrating copper(II) sulphate. Equation: CuSO4.5H2O -> CuSO4 + 5 H2O. Observations: blue->white; droplets; stepwise - 2 waters out at 63 C, 2 more at 109 C, the last (bonded to Cu as [Cu(H2O)4]) needs 650 C. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_cuso4",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Synthesize Ca(OH)2",
+    "input": "make Ca(OH)2",
+    "output": "Synthesizing Ca(OH)2 (Calcium hydroxide (slaked lime)): CaC2 + 2 H2O -> C2H2 + Ca(OH)2. Requires CaC2 + 2 H2O. This is a acid_base, gas_gen reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "caoh2",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Thorium (solid, standard state) and Bismuth (solid, standard state)?",
+    "input": "what can I make from Thorium (solid, standard state) and Bismuth (solid, standard state)?",
+    "output": "From Thorium (solid, standard state) and Bismuth (solid, standard state), you can make compounds containing Th and Bi. Check element pair Th-Bi in combinations (9410 pairs). Put elem_th + elem_bi on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_th+elem_bi",
+    "category": "mix"
+  },
+  {
+    "instruction": "Make water H2O in all possible ways",
+    "input": "make water",
+    "output": "To make water (H2O), I found 64 routes in lab: 1. Burning hydrogen: 2 H2 + O2 -> 2 H2O (exothermic, 1.10V if fuel cell). 2. Decomposition: NH4NO2 -> N2 + 2 H2O. 3. Acid-base: CuO + H2SO4 -> CuSO4 + H2O. 4. Dehydration: CuSO4.5H2O -> CuSO4 + 5 H2O. ... and 60 more. Every route uses real warehouse data. Load H2 + O2 onto bench for simplest.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "water",
+    "category": "water"
+  },
+  {
+    "instruction": "What happens when I mix NaCl + NH3 + CO2 + H2O?",
+    "input": "what happens if I mix NaCl + NH3 + CO2 + H2O?",
+    "output": "Mixing NaCl + NH3 + CO2 + H2O -> NaHCO3 + NH4Cl: Solvay step: carbonating ammoniated brine. Equation: NaCl + NH3 + CO2 + H2O -> NaHCO3 + NH4Cl. Observations: white-crystal; NaHCO3 precipitates because it is the least soluble of the four salts present at 15 C - the whole process is a Ksp argument; brine->cloudy. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_nahco3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Synthesize C4H8O2",
+    "input": "make C4H8O2",
+    "output": "Synthesizing C4H8O2 (Ethyl acetate): C2H5OH + CH3COOH -> CH3COOC2H5 + H2O. Requires C2H5OH + CH3COOH. This is a organic_test, organic_synth reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "ethylacetate",
+    "category": "specific"
+  },
+  {
+    "instruction": "Synthesize NaOH",
+    "input": "make NaOH",
+    "output": "Synthesizing NaOH (Sodium hydroxide (caustic soda)): 2 Na + 2 H2O -> 2 NaOH + H2. Requires 2 Na + 2 H2O. This is a displacement, redox reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "naoh",
+    "category": "specific"
+  },
+  {
+    "instruction": "How to make Nitric acid (HNO3)?",
+    "input": "make Nitric acid",
+    "output": "To make Nitric acid (HNO3), you have 6 routes. Best: Potassium nitrate with concentrated sulphuric acid: KNO3 + H2SO4 -> KHSO4 + HNO3. Bench: KNO3 + H2SO4 -> KHSO4 + HNO3. Observations: hno3; fog. Safety: 3/5. Load KNO3 + H2SO4 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "hno3",
+    "category": "specific"
+  },
+  {
+    "instruction": "Synthesize Fe(OH)2",
+    "input": "make Fe(OH)2",
+    "output": "Synthesizing Fe(OH)2 (Iron(II) hydroxide): FeSO4 + 2 NaOH -> Fe(OH)2 + Na2SO4. Requires FeSO4 + 2 NaOH. This is a metathesis, precip reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "feoh2",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Meitnerium (solid, standard state) and Darmstadtium (solid, standard state)?",
+    "input": "what can I make from Meitnerium (solid, standard state) and Darmstadtium (solid, standard state)?",
+    "output": "From Meitnerium (solid, standard state) and Darmstadtium (solid, standard state), you can make compounds containing Mt and Ds. Check element pair Mt-Ds in combinations (9410 pairs). Put elem_mt + elem_ds on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_mt+elem_ds",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix NaCl + H2SO4?",
+    "input": "what happens if I mix NaCl + H2SO4?",
+    "output": "Mixing NaCl + H2SO4 -> NaHSO4 + HCl: Sodium chloride with concentrated sulphuric acid. Equation: NaCl + H2SO4 -> NaHSO4 + HCl. Observations: hcl; fog; pungent. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_hcl",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Synthesize MgO",
+    "input": "make MgO",
+    "output": "Synthesizing MgO (Magnesium oxide (magnesia)): 2 Mg + O2 -> 2 MgO. Requires 2 Mg + O2. This is a synthesis, combustion reaction.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "mgo",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix NH4NO3?",
+    "input": "what happens if I mix NH4NO3?",
+    "output": "Mixing NH4NO3 -> N2O + 2 H2O: Careful decomposition of ammonium nitrate. Equation: NH4NO3 -> N2O + 2 H2O. Observations: n2o; fizz; hold at 240-270 C - hotter and it detonates to N2 + O2 + H2O. Safety: danger 3/5, display-only.",
+    "intent": "EXPLORE",
+    "target": "dec_nh4no3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Rubidium (solid, standard state) and Vanadium (solid, standard state)?",
+    "input": "what can I make from Rubidium (solid, standard state) and Vanadium (solid, standard state)?",
+    "output": "From Rubidium (solid, standard state) and Vanadium (solid, standard state), you can make compounds containing Rb and V. Check element pair Rb-V in combinations (9410 pairs). Put elem_rb + elem_v on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_rb+elem_v",
+    "category": "mix"
+  },
+  {
+    "instruction": "How to make Sulphurous acid (SO2 water) (H2SO3)?",
+    "input": "make Sulphurous acid (SO2 water)",
+    "output": "To make Sulphurous acid (SO2 water) (H2SO3), you have 1 routes. Best: Sulphur dioxide in water with blue litmus: SO2 + H2O -> H2SO3. Bench: SO2 + H2O -> H2SO3. Observations: blue-litmus->red; burning a match in a jam jar and adding water gives an acid that turns limewater milky AND decolourises magenta fuchsin - the SO2 identity pair, and the first step of acid rain. Safety: None/5. Load SO2 + H2O onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "h2so3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix H2CO3?",
+    "input": "what happens if I mix H2CO3?",
+    "output": "Mixing H2CO3 -> H2O + CO2: Warming a fizzy drink. Equation: H2CO3 -> H2O + CO2. Observations: co2; the pH of a decanted sample climbs from about 3.8 toward 5.6 as CO2 leaves - the same chemistry that makes your blood unload CO2 in the lungs. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_h2co3",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix 2 Mg(NO3)2?",
+    "input": "what happens if I mix 2 Mg(NO3)2?",
+    "output": "Mixing 2 Mg(NO3)2 -> 2 MgO + 4 NO2 + O2: Magnesium nitrate decomposition. Equation: 2 Mg(NO3)2 -> 2 MgO + 4 NO2 + O2. Observations: no2; white->white; none. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_nitrate_mg",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Sodium ethanoate (acetate) anhydrous (C2H3NaO2)?",
+    "input": "make Sodium ethanoate (acetate) anhydrous",
+    "output": "To make Sodium ethanoate (acetate) anhydrous (C2H3NaO2), you have 4 routes. Best: Iodoform test for the methyl-carbinol group: CH3COCH3 + 3 I2 + 4 NaOH -> CHI3 + CH3COONa + 3 NaI + 3 H2O. Bench: CH3COCH3 + 3 I2 + 4 NaOH -> CHI3 + CH3COONa + 3 NaI + 3 H2O. Observations: antiseptic; yellow. Safety: None/5. Load CH3COCH3 + 3 I2 + 4 NaOH onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "ch3coona",
+    "category": "specific"
+  },
+  {
+    "instruction": "What can I make from Tin (solid, standard state) and Tungsten (solid, standard state)?",
+    "input": "what can I make from Tin (solid, standard state) and Tungsten (solid, standard state)?",
+    "output": "From Tin (solid, standard state) and Tungsten (solid, standard state), you can make compounds containing Sn and W. Check element pair Sn-W in combinations (9410 pairs). Put elem_sn + elem_w on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_sn+elem_w",
+    "category": "mix"
+  },
+  {
+    "instruction": "What can I make from Gadolinium (solid, standard state) and Neptunium (solid, standard state)?",
+    "input": "what can I make from Gadolinium (solid, standard state) and Neptunium (solid, standard state)?",
+    "output": "From Gadolinium (solid, standard state) and Neptunium (solid, standard state), you can make compounds containing Gd and Np. Check element pair Gd-Np in combinations (9410 pairs). Put elem_gd + elem_np on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_gd+elem_np",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix 2 HgO?",
+    "input": "what happens if I mix 2 HgO?",
+    "output": "Mixing 2 HgO -> 2 Hg + O2: Priestley's classic oxide decomposition. Equation: 2 HgO -> 2 Hg + O2. Observations: o2; red->silver-droplets; silver-mirror. Safety: danger 3/5, display-only.",
+    "intent": "EXPLORE",
+    "target": "dec_hg\u043e",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What happens when I mix 2 CH4N2O?",
+    "input": "what happens if I mix 2 CH4N2O?",
+    "output": "Mixing 2 CH4N2O -> C2H5N3O2 + NH3: Urea heating: biuret formation. Equation: 2 CH4N2O -> C2H5N3O2 + NH3. Observations: nh3; none; white. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_urea",
+    "category": "reaction"
+  },
+  {
+    "instruction": "What can I make from Tellurium (solid, standard state) and Terbium (solid, standard state)?",
+    "input": "what can I make from Tellurium (solid, standard state) and Terbium (solid, standard state)?",
+    "output": "From Tellurium (solid, standard state) and Terbium (solid, standard state), you can make compounds containing Te and Tb. Check element pair Te-Tb in combinations (9410 pairs). Put elem_te + elem_tb on bench to see ion-pair matrix and curated reactions.",
+    "intent": "MIX_FROM",
+    "target": "elem_te+elem_tb",
+    "category": "mix"
+  },
+  {
+    "instruction": "What happens when I mix 2 H2 + O2?",
+    "input": "what happens if I mix 2 H2 + O2?",
+    "output": "Mixing 2 H2 + O2 -> 2 H2O: Burning hydrogen to water. Equation: 2 H2 + O2 -> 2 H2O. Observations: pop; none; instant. Safety: danger 2/5, .",
+    "intent": "EXPLORE",
+    "target": "syn_h2o",
+    "category": "reaction"
+  },
+  {
+    "instruction": "How to make Carbonic acid (H2CO3)?",
+    "input": "make Carbonic acid",
+    "output": "To make Carbonic acid (H2CO3), you have 2 routes. Best: Distilled water left in air: H2O + CO2 -> H2CO3. Bench: H2O + CO2 -> H2CO3. Observations: pH falls from 7.0 to about 5.6 in half an hour - so 'pure water is neutral' and 'rainwater is neutral' are both approximations, and the sim can show the drift. Safety: None/5. Load H2O + CO2 onto bench to run it.",
+    "intent": "MAKE_SPECIFIC",
+    "target": "h2co3",
+    "category": "specific"
+  },
+  {
+    "instruction": "What happens when I mix 2 NH3?",
+    "input": "what happens if I mix 2 NH3?",
+    "output": "Mixing 2 NH3 -> N2 + 3 H2: Ammonia over hot nickel. Equation: 2 NH3 -> N2 + 3 H2. Observations: h2; a demonstration of a reversible gas equilibrium: cooling re-forms some ammonia, which is why ammonia is hard to destroy thermally. Safety: danger None/5, .",
+    "intent": "EXPLORE",
+    "target": "dec_ammonia_cracking",
+    "category": "reaction"
+  },
+  {
+    "instruction": "Explain whole world chemistry knowledge",
+    "input": "what is world chemistry knowledge?",
+    "output": "World chemistry knowledge: 118 elements H to Og, 5000+ compounds (inorganic, organic, biochemical) expandable to 100M+ PubChem, 7 reaction templates (acid-base, redox, precipitation, combustion, synthesis, organic), 6 world rules (solubility, reactivity series, acid-base strength, redox, periodic trends, thermodynamics). Domains: inorganic, organic, physical, analytical, biochemical, industrial, environmental. Capabilities: predict any reaction, balance any equation, explain any concept, synthesis routes beyond curated 424 via templates/rules. Curated 582 species 424 reactions verified + world infinite.",
+    "intent": "WORLD_KNOWLEDGE",
+    "category": "world"
+  },
+  {
+    "instruction": "Balance any equation with world knowledge",
+    "input": "balance H2 + O2 -> H2O",
+    "output": "Balanced: 2 H2 + O2 -> 2 H2O. Steps: 1. Count atoms H 2 vs 2, O 2 vs 1 \u2192 need 2 H2O. 2. Now H 4 vs 4, O 2 vs 2 balanced. World rule: mass and charge must balance, use oxidation numbers, inspection or algebraic method. 118 elements follow periodic trends. Example: CH4 + 2 O2 -> CO2 + 2 H2O, 4 Fe + 3 O2 -> 2 Fe2O3.",
+    "intent": "BALANCE",
+    "category": "general"
+  },
+  {
+    "instruction": "Predict reaction with world knowledge",
+    "input": "predict Na + Cl2",
+    "output": "Prediction for Na + Cl2: 2 Na + Cl2 -> 2 NaCl (synthesis, direct combination). Type: synthesis/redox, Na -> Na+ + e- oxidation, Cl2 + 2e- -> 2Cl- reduction. Conditions: heat, exothermic, bright yellow flame. Observations: white crystalline salt forms. World rule: synthesis A+B->AB, alkali metal + halogen -> salt, highly exothermic, ionic bond. Safety: danger 3/5, reactive metals, use small scale. Real-world: table salt 3.5% seawater, cubic lattice, 6M tons/year.",
+    "intent": "PREDICT",
+    "category": "synthesis"
+  },
+  {
+    "instruction": "Explain periodic table with world knowledge",
+    "input": "explain periodic table",
+    "output": "Periodic Table world knowledge: 118 elements H (1) to Og (118), 7 periods (rows), 18 groups (columns), 4 blocks s,p,d,f. Organized by atomic number (Moseley), electron configuration. Trends: atomic radius decreases across period (more protons pull electrons), increases down group (more shells). Ionization energy opposite (increases across, decreases down). Electronegativity F 4.0 most, Fr 0.7 least, increases across decreases down. Metallic character decreases across, increases down. Categories: alkali metals (group 1 reactive), alkaline earth (2), transition metals (variable oxidation), halogens (17 reactive), noble gases (18 inert), lanthanides/actinides. Mendeleev predicted 1869, Moseley atomic number 1913, quantum mechanics explains. Uses: 118 elements, 94 natural, 24 synthetic, all matter.",
+    "intent": "WORLD_KNOWLEDGE",
+    "category": "periodic"
+  },
+  {
+    "instruction": "What is organic chemistry world knowledge",
+    "input": "what is organic chemistry",
+    "output": "Organic Chemistry world knowledge: Study of carbon compounds, 10M+ known (90% of all compounds), carbon 4 bonds catenation forms chains rings. Functional groups: alkane C-C single, alkene C=C double, alkyne C\u2261C triple, alcohol -OH, aldehyde -CHO, ketone C=O, carboxylic acid -COOH, ester -COO-, amine -NH2, amide, ether, etc. Reactions: substitution (SN1 SN2), addition (electrophilic, nucleophilic), elimination (E1 E2), rearrangement, oxidation reduction. Mechanisms: curly arrows, carbocation, carbanion, radical. Synthesis: retrosynthesis (Corey), Grignard RMgX, Fischer esterification RCOOH+R'OH->RCOOR'+H2O H2SO4 catalyst, etc. World: petroleum (alkanes), polymers (polyethylene), drugs (aspirin), life (DNA, proteins, glucose C6H12O6, amino acids). Lab has some organic but world has millions.",
+    "intent": "WORLD_KNOWLEDGE",
+    "category": "organic"
+  },
+  {
+    "instruction": "Make water with world knowledge",
+    "input": "make water with world knowledge",
+    "output": "To make water H2O with world chemistry knowledge: 64 curated routes + infinite world routes. Curated best: 2 H2 + O2 -> 2 H2O burning hydrogen, exothermic, water condenses, danger 2/5. World routes: CH4 + 2 O2 -> CO2 + 2 H2O (methane combustion natural gas), C2H5OH + 3 O2 -> 2 CO2 + 3 H2O (ethanol combustion), CuO + H2SO4 -> CuSO4 + H2O (acid-base), Ca(OH)2 + CO2 -> CaCO3 + H2O (carbonation), 2 H2O2 -> 2 H2O + O2 (decomposition MnO2 catalyst), N2H4 + O2 -> N2 + 2 H2O (hydrazine rocket), C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O (respiration biochemical). World knowledge: universal solvent 71% Earth surface 60% human body, bent 104.5\u00b0 polar H-bonding anomalous expansion ice less dense high bp 100C vs H2S -60C high heat capacity 4.18 J/gK, Kw=1e-14 pH7 neutral, 18 isotopic forms H2O D2O heavy water. Bench: H2+O2 simplest.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "water"
+  },
+  {
+    "instruction": "Make many acids with world knowledge",
+    "input": "make many acids with world knowledge",
+    "output": "Making many acids with world chemistry knowledge: 27 curated + 1000+ world acids. Curated: HCl (H+Cl) via NaCl+H2SO4->NaHSO4+HCl 9 routes, H2SO4 (H2+S+O4) via SO3+H2O Contact process 70M tons/year S+O2->SO2 2SO2+O2->2SO3 SO3+H2O->H2SO4, HNO3 (H+N+O3) via KNO3+H2SO4->KHSO4+HNO3 Ostwald NH3+O2->NO->NO2->HNO3, H3PO4 (H3+P+O4) triprotic, acetic CH3COOH=C2H4O2 weak pKa 4.76 vinegar 5% glacial 16.6C freezes, etc. World: strong acids HCl HBr HI HNO3 H2SO4 HClO4 pKa<0 fully dissociate, weak CH3COOH H2CO3 pKa>0 partial, organic 100+ (formic, propionic, benzoic, citric, etc.), superacids HF-SbF5 magic acid, theories Arrhenius H+ water Bronsted donate H+ Lewis accept e- pair, uses stomach HCl pH1-2, acid rain H2SO4+HNO3, fertilizers, 70M tons H2SO4 king. Each acid's elements are building blocks, periodic trends electronegativity explain: H+ nonmetal, Cl halogen, etc. Bench: NaCl+H2SO4 for HCl, SO3+H2O for H2SO4.",
+    "intent": "MAKE_MANY",
+    "category": "acid"
+  },
+  {
+    "instruction": "Explain thermodynamics world knowledge",
+    "input": "explain thermodynamics",
+    "output": "Thermodynamics world knowledge: Study of energy heat work. \u0394H enthalpy heat, exothermic negative releases heat (2H2+O2->2H2O \u0394H=-572kJ), endothermic positive absorbs (CaCO3->CaO+CO2 \u0394H=+178kJ needs heat). Hess's law \u0394H sum. \u0394S entropy disorder gas>liquid>solid increases. \u0394G Gibbs free energy \u0394G=\u0394H-T\u0394S spontaneous if \u0394G negative, equilibrium \u0394G=-RTlnK, K=[products]/[reactants]. Le Chatelier: system shifts to counteract change (increase pressure shifts to fewer gas moles, increase temp shifts endothermic). Kinetics: rate, activation energy, catalyst lowers Ea, temperature increases rate. World: combustion exothermic, photosynthesis endothermic needs light, Haber-Bosch exothermic but high T needed for rate, etc. Lab: heat panel shows \u0394H, world extends to all reactions.",
+    "intent": "WORLD_KNOWLEDGE",
+    "category": "physical"
+  },
+  {
+    "instruction": "Make Water with world knowledge",
+    "input": "make Water",
+    "output": "To make Water (H2O) with world knowledge: Universal solvent, 71% Earth, H-bonding, Kw=1e-14, 18 isotopic forms, anomalous expansion. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have h2o with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements H2O.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  },
+  {
+    "instruction": "Make Hydrochloric acid with world knowledge",
+    "input": "make Hydrochloric acid",
+    "output": "To make Hydrochloric acid (HCl) with world knowledge: Strong acid pKa -7, stomach pH1-2, 9 routes, world 1000+ acids, azeotrope 20.2%. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have hcl with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements HCl.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  },
+  {
+    "instruction": "Make Sulfuric acid with world knowledge",
+    "input": "make Sulfuric acid",
+    "output": "To make Sulfuric acid (H2SO4) with world knowledge: King of chemicals 70M tons/year, Contact process, strong diprotic, dehydrates sugar, exothermic dilution. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have h2so4 with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements H2SO4.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  },
+  {
+    "instruction": "Make Sodium chloride with world knowledge",
+    "input": "make Sodium chloride",
+    "output": "To make Sodium chloride (NaCl) with world knowledge: Table salt 3.5% seawater, cubic lattice, electrolyte, 4000 years trade. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have nacl with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements NaCl.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  },
+  {
+    "instruction": "Make Ammonia with world knowledge",
+    "input": "make Ammonia",
+    "output": "To make Ammonia (NH3) with world knowledge: Haber-Bosch N2+3H2->2NH3 400C 200atm Fe, 80M tons/year, 1% world energy, weak base. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have nh3 with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements NH3.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  },
+  {
+    "instruction": "Make Methane with world knowledge",
+    "input": "make Methane",
+    "output": "To make Methane (CH4) with world knowledge: Simplest alkane, natural gas 70-90%, tetrahedral, 25x greenhouse vs CO2. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have ch4 with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements CH4.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  },
+  {
+    "instruction": "Make Ethanol with world knowledge",
+    "input": "make Ethanol",
+    "output": "To make Ethanol (C2H5OH) with world knowledge: Alcohol, fermentation C6H12O6->2C2H5OH+2CO2, 95.6% azeotrope, fuel, H-bonding. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have c2h5oh with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements C2H5OH.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  },
+  {
+    "instruction": "Make Glucose with world knowledge",
+    "input": "make Glucose",
+    "output": "To make Glucose (C6H12O6) with world knowledge: Blood sugar 5.5mM, photosynthesis 6CO2+6H2O->C6H12O6+6O2, 4 chiral centers, 30 ATP via glycolysis. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have c6h12o6 with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements C6H12O6.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  },
+  {
+    "instruction": "Make Carbon dioxide with world knowledge",
+    "input": "make Carbon dioxide",
+    "output": "To make Carbon dioxide (CO2) with world knowledge: Greenhouse 420ppm, dry ice -78.5C, limewater milky, photosynthesis. Synthesis via world templates: acid + base -> salt + water (H+ + OH- -> H2O \u0394H=-57kJ), metal + acid -> salt + H2 (reactivity series K>Na>Ca>Mg>Al>Zn>Fe>...H>Cu>Ag>Au). Real-world uses, industrial methods, periodic trends. Curated lab may have co2 with some routes, but world has infinite via organic, inorganic, biochemical pathways. Bench: check elements CO2.",
+    "intent": "MAKE_SPECIFIC",
+    "category": "general"
+  }
+]
