@@ -1,0 +1,84 @@
+{
+ "generated": "2026-09-21T11:36:58Z",
+ "build_id": "4c758b02e955",
+ "files": [
+  {
+   "file": "assets/index-9X7KrYwc.js",
+   "bytes": 529025,
+   "gz": 165519
+  },
+  {
+   "file": "assets/index-BGo1_2tn.js",
+   "bytes": 6051236,
+   "gz": 2145704
+  },
+  {
+   "file": "assets/style-BnkcMfbJ.css",
+   "bytes": 62193,
+   "gz": 11204
+  },
+  {
+   "file": "data/chemlab.json.gz",
+   "bytes": 1017361,
+   "gz": 1017361
+  },
+  {
+   "file": "data/combinations.json.gz",
+   "bytes": 258051,
+   "gz": 258051
+  },
+  {
+   "file": "data/manifest.json",
+   "bytes": 700,
+   "gz": 368
+  },
+  {
+   "file": "icons/apple-touch-icon.png",
+   "bytes": 1762,
+   "gz": 1626
+  },
+  {
+   "file": "icons/favicon-32.png",
+   "bytes": 465,
+   "gz": 488
+  },
+  {
+   "file": "icons/icon-192.png",
+   "bytes": 1908,
+   "gz": 1660
+  },
+  {
+   "file": "icons/icon-512.png",
+   "bytes": 5840,
+   "gz": 3394
+  },
+  {
+   "file": "icons/icon-maskable-512.png",
+   "bytes": 4413,
+   "gz": 2368
+  },
+  {
+   "file": "icons/icon-maskable.svg",
+   "bytes": 1512,
+   "gz": 313
+  },
+  {
+   "file": "icons/icon.svg",
+   "bytes": 1512,
+   "gz": 313
+  },
+  {
+   "file": "index.html",
+   "bytes": 2189,
+   "gz": 1005
+  },
+  {
+   "file": "manifest.webmanifest",
+   "bytes": 2118,
+   "gz": 705
+  }
+ ],
+ "total_bytes": 7940285,
+ "total_gz": 3610079,
+ "scope": "everything the first paint needs; the app then works with the network off"
+}

@@ -1,0 +1,100 @@
+{
+ "id": "chemlab",
+ "name": "ChemLab \u2014 the warehouse on your phone",
+ "short_name": "ChemLab",
+ "description": "A whole chemistry lab from one data file: 118 elements, 581 substances, 424 reactions, 9410 element pairs, the safety guard and the notebook. It runs with no network at all.",
+ "lang": "en",
+ "dir": "ltr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "display_override": [
+  "minimal-ui",
+  "standalone",
+  "browser"
+ ],
+ "orientation": "any",
+ "background_color": "#0b0f16",
+ "theme_color": "#0b0f16",
+ "categories": [
+  "education",
+  "science",
+  "productivity"
+ ],
+ "icons": [
+  {
+   "src": "./icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "./icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "./icons/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "./icons/icon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml",
+   "purpose": "any"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "The periodic table",
+   "short_name": "Table",
+   "description": "118 elements, five colour modes",
+   "url": "./?tab=table",
+   "icons": [
+    {
+     "src": "./icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "The bench",
+   "short_name": "Bench",
+   "description": "Mix up to four substances and read what the data says",
+   "url": "./?tab=bench",
+   "icons": [
+    {
+     "src": "./icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Safety and refusals",
+   "short_name": "Safety",
+   "description": "What must not be done, and what to do if it was",
+   "url": "./?tab=safety",
+   "icons": [
+    {
+     "src": "./icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Every reaction",
+   "short_name": "Reactions",
+   "description": "424 reactions, sorted by what you can see and what the record can answer",
+   "url": "./?tab=reactions",
+   "icons": [
+    {
+     "src": "./icons/icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  }
+ ]
+}
