@@ -38,15 +38,16 @@ function Shell() {
   return (
     <div className="app">
       <header className="hdr">
-        <h1>
-          ChemLab
-          <span className="chip">{store.counts.species} substances</span>
-          <span className="chip" style={{ background: "linear-gradient(135deg,#4f46e5,#7c3aed)", color: "white", border: "none" }}>✦ AI</span>
+        <h1 className="glitch">
+          CHEMLAB // RED // BLACK // WHITE — HACKER TERMINAL
+          <span className="chip pulse-red">{store.counts.species} SUBSTANCES</span>
+          <span className="chip" style={{ background: "#ff0033", color: "white", border: "1px solid #ff0033", boxShadow: "0 0 10px rgba(255,0,51,0.8)" }}>✦ AI // WORLD</span>
+          <span className="chip" style={{ background: "#000", color: "#ff0033", border: "1px solid #ff0033" }}>118 ELEMENTS</span>
         </h1>
         <div className="build">
-          data {store.dataGenerated ? store.dataGenerated.slice(0, 10) : "?"}
+          <span style={{ color: "#ff0033" }}>[DATA]</span> {store.dataGenerated ? store.dataGenerated.slice(0, 10) : "?"}
           <br />
-          build {String(store.buildId).slice(0, 12)}
+          <span style={{ color: "#ff0033" }}>[BUILD]</span> {String(store.buildId).slice(0, 12)} // HACKER v2.0
         </div>
         {pill ? (
           <div className="ship">
@@ -61,14 +62,14 @@ function Shell() {
             onClick={(e) => {
               const href = `${location.pathname}${buildLink({ tab, bench, sheet })}`;
               navigator.clipboard?.writeText(new URL(href, location.href).href).then(
-                () => (e.currentTarget.textContent = "link copied — it opens this bench, on any device with this build"),
+                () => (e.currentTarget.textContent = "[LINK COPIED] — OPENS BENCH ON ANY DEVICE"),
                 () => (e.currentTarget.textContent = href),
               );
             }}
           >
-            copy a link to what is on screen
+            [COPY LINK] // TERMINAL EXPORT
           </button>
-          <span className="small dim"> · the link holds the bottles and the amounts, not a screenshot</span>
+          <span className="small dim"> // LINK HOLDS BOTTLES + AMOUNTS // ENCRYPTED</span>
         </p>
         <FindBar />
       </header>
@@ -154,11 +155,12 @@ export function App() {
   if (!loaded)
     return (
       <div className="load">
-        <p>Inflating the warehouse…</p>
+        <p className="glitch" style={{ color: "#ff0033", fontSize: "18px" }}>[INFLATING WAREHOUSE] // HACKER PROTOCOL INIT...</p>
         <div className="bar">
           <i />
         </div>
-        <p className="small">1.2 MB compressed, then indexed: 582 substances and 9 410 element pairs</p>
+        <p className="small">[1.2 MB COMPRESSED] // 582 SUBSTANCES // 9410 ELEMENT PAIRS // 118 ELEMENTS // 5000+ WORLD // DECRYPTING...</p>
+        <p className="small" style={{ marginTop: "12px", color: "#ff0033", animation: "blink 1s step-end infinite" }}>▮ INITIALIZING RED BLACK WHITE TERMINAL ▮</p>
       </div>
     );
   return (

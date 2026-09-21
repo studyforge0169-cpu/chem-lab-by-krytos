@@ -1,0 +1,246 @@
+/* GLOBAL HACKER RED BLACK WHITE OVERRIDE — FUTURISTIC */
+
+/* ALL SCREENS HACKER */
+.shelf-screen, .bench-screen, .table-screen, .reactions-screen, .combos-screen, .work-screen, .safety-screen, .notebook-screen, .calc-screen, .reaction-screen, .sheet-screen {
+  animation: screenIn 0.5s ease-out;
+}
+@keyframes screenIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* SHELF */
+.shelf-grid {
+  gap: 10px !important;
+}
+.shelf-card, .species-card, .reaction-card, .combo-card, .work-card, .note-card, .calc-card, .safety-card {
+  background: #0a0a0a !important;
+  border: 1px solid #33000a !important;
+  border-left: 2px solid #ff0033 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.9) !important;
+  transition: all 0.3s ease !important;
+  position: relative;
+  overflow: hidden;
+}
+.shelf-card::before, .species-card::before, .reaction-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #ff0033, transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.shelf-card:hover, .species-card:hover, .reaction-card:hover, .combo-card:hover {
+  border-color: #ff0033 !important;
+  box-shadow: 0 0 20px rgba(255,0,51,0.25), 0 4px 20px rgba(0,0,0,0.9) !important;
+  transform: translateY(-2px);
+  background: #111 !important;
+}
+.shelf-card:hover::before, .species-card:hover::before, .reaction-card:hover::before { opacity: 1; }
+
+/* TABLE — PERIODIC TABLE HACKER */
+.table-screen {
+  background: #000;
+}
+.table-cell, .element-cell {
+  background: #0a0a0a !important;
+  border: 1px solid #33000a !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+  transition: all 0.2s !important;
+}
+.table-cell:hover, .element-cell:hover {
+  border-color: #ff0033 !important;
+  box-shadow: 0 0 12px rgba(255,0,51,0.5) !important;
+  transform: scale(1.05);
+  z-index: 2;
+  background: #111 !important;
+}
+.table-cell .num, .element-cell .num {
+  color: #ff0033 !important;
+  font-weight: 800 !important;
+}
+.table-cell .sym, .element-cell .sym {
+  color: #fff !important;
+  font-weight: 800 !important;
+  text-shadow: 0 0 6px rgba(255,255,255,0.3);
+}
+
+/* BENCH — HACKER LAB */
+.bench-bottle, .bottle, .apparatus {
+  background: #0a0a0a !important;
+  border: 1px solid #33000a !important;
+  border-radius: 0 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8) !important;
+  transition: all 0.3s !important;
+}
+.bench-bottle:hover, .bottle:hover {
+  border-color: #ff0033 !important;
+  box-shadow: 0 0 16px rgba(255,0,51,0.3) !important;
+}
+
+/* BUTTONS GLOBAL HACKER */
+button:not(.tabs button):not(.pill-btn):not(.icon-btn):not(.link) {
+  background: #000 !important;
+  border: 1px solid #ff0033 !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  transition: all 0.2s !important;
+  position: relative;
+  overflow: hidden;
+}
+button:not(.tabs button):not(.pill-btn):not(.icon-btn):not(.link):hover {
+  background: #ff0033 !important;
+  color: #fff !important;
+  box-shadow: 0 0 16px rgba(255,0,51,0.6) !important;
+  text-shadow: 0 0 6px #fff !important;
+  transform: translateY(-1px);
+}
+
+/* INPUTS HACKER */
+input[type="text"], input[type="number"], input[type="search"], textarea, select {
+  background: #000 !important;
+  border: 1px solid #33000a !important;
+  border-left: 2px solid #ff0033 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #ff0033 !important;
+  box-shadow: 0 0 12px rgba(255,0,51,0.3), inset 0 0 10px rgba(255,0,51,0.05) !important;
+  outline: none !important;
+  background: #0a0a0a !important;
+}
+
+/* TITLES HACKER */
+h1, h2, h3, h4 {
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  color: #fff !important;
+}
+h2 {
+  color: #ff0033 !important;
+  text-shadow: 0 0 8px rgba(255,0,51,0.6) !important;
+  border-left: 3px solid #ff0033 !important;
+  padding-left: 12px !important;
+}
+
+/* SEARCH HACKER */
+.search-bar, .search-box {
+  background: #000 !important;
+  border: 1px solid #33000a !important;
+  border-left: 2px solid #ff0033 !important;
+  border-radius: 0 !important;
+  box-shadow: inset 0 0 20px rgba(255,0,51,0.05) !important;
+}
+.search-bar input, .search-box input {
+  background: transparent !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
+
+/* MODALS / SHEETS HACKER */
+.sheet, .modal, .dialog {
+  background: #0a0a0a !important;
+  border: 2px solid #ff0033 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 30px rgba(255,0,51,0.3), 0 10px 40px rgba(0,0,0,0.9) !important;
+  color: #fff !important;
+}
+
+/* PROGRESS / BARS HACKER */
+.progress, .meter, .bar {
+  background: #111 !important;
+  border: 1px solid #33000a !important;
+  border-radius: 0 !important;
+  overflow: hidden;
+}
+.progress i, .meter i, .bar i, .progress-fill {
+  background: #ff0033 !important;
+  box-shadow: 0 0 10px rgba(255,0,51,0.6) !important;
+}
+
+/* CODE / MONO HACKER */
+code, pre, .mono {
+  background: #000 !important;
+  border: 1px solid #33000a !important;
+  border-left: 2px solid #ff0033 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* SCROLL ANIMATIONS */
+.card, .shelf-card, .reaction-card {
+  animation: cardIn 0.5s ease-out backwards;
+}
+.card:nth-child(1) { animation-delay: 0.05s; }
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.15s; }
+.card:nth-child(4) { animation-delay: 0.2s; }
+.card:nth-child(5) { animation-delay: 0.25s; }
+.card:nth-child(6) { animation-delay: 0.3s; }
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* GLITCH TEXT EFFECT FOR TITLES */
+.glitch {
+  position: relative;
+  animation: glitch 3s infinite;
+}
+@keyframes glitch {
+  0%, 90%, 100% { transform: translate(0); text-shadow: 0 0 8px rgba(255,0,51,0.6); }
+  92% { transform: translate(-1px, 1px); text-shadow: -1px 0 #ff0033, 1px 0 #fff; }
+  94% { transform: translate(1px, -1px); text-shadow: 1px 0 #ff0033, -1px 0 #fff; }
+  96% { transform: translate(-1px, 0); }
+}
+
+/* RED PULSE FOR DANGER */
+.pulse-red {
+  animation: pulseRed 2s ease-in-out infinite;
+}
+@keyframes pulseRed {
+  0%, 100% { box-shadow: 0 0 8px rgba(255,0,51,0.4); }
+  50% { box-shadow: 0 0 20px rgba(255,0,51,0.8), 0 0 30px rgba(255,0,51,0.3); }
+}
+
+/* TERMINAL CURSOR */
+.terminal::after {
+  content: "▮";
+  color: #ff0033;
+  animation: cursorBlink 1s step-end infinite;
+  text-shadow: 0 0 8px #ff0033;
+}
+@keyframes cursorBlink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* HACKER GRID OVERLAY FOR SCREENS */
+.hacker-grid {
+  position: relative;
+}
+.hacker-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255,0,51,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,0,51,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  z-index: -1;
+}
