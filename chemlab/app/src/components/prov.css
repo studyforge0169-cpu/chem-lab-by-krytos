@@ -1,0 +1,26 @@
+.prov { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: .35em; }
+.prov-label { color: var(--dim); }
+.prov-value { font-variant-numeric: tabular-nums; font-weight: 600; }
+.prov-unit { color: var(--dim); font-weight: 500; font-size: .85em; }
+.prov-kelvin, .prov-conf, .prov-src, .prov-note, .prov-missing { color: var(--dim); font-size: .72em; font-weight: 400; }
+.prov-conf { background: var(--chip); border-radius: 99px; padding: .05em .45em; }
+.prov-src { flex-basis: 100%; opacity: .62; line-height: 1.3; }
+.prov-note { flex-basis: 100%; opacity: .8; font-style: italic; }
+.prov-missing { color: var(--warn); }
+.prov-approx .prov-value { color: var(--approx); }
+.prov-predicted .prov-value { color: var(--predicted); }
+.prov-flag { background: color-mix(in srgb, var(--predicted) 22%, transparent); color: var(--predicted); border-radius: 4px; padding: .05em .4em; font-size: .68em; text-transform: uppercase; letter-spacing: .04em; }
+.prov-computed .prov-value { color: var(--computed); }
+
+/* a guard finding: the data's words, and the key they came from */
+.find { border-left: 2px solid var(--line); padding: 6px 0 6px 10px; margin: 8px 0; }
+.find-block { border-left-color: var(--danger); background: color-mix(in srgb, var(--danger) 7%, transparent); }
+.find-warn { border-left-color: var(--warn); }
+.find-note { opacity: .85 }
+.find strong { font-size: 13.5px; }
+.find-text { margin: 4px 0; font-size: 13.5px; }
+.find-action { margin: 4px 0; font-size: 13px; color: var(--ok); }
+.from { color: var(--dim); margin: 4px 0 0; }
+.from code { font-size: 11.5px; background: var(--panel); padding: .05em .35em; border-radius: 5px; border: 1px solid var(--line); }
+.quiet { margin-top: 8px; }
+.quiet summary { cursor: pointer; font-size: 12.5px; color: var(--dim); }

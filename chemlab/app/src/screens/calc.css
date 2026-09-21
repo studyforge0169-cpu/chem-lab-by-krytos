@@ -1,0 +1,30 @@
+/* the pH screen: a picker, three questions, one curve */
+.pick { display: flex; flex-direction: column; gap: 6px; }
+.pick input { background: var(--panel-2); border: 1px solid var(--line); border-radius: 9px; padding: .5em .6em; color: var(--ink); font: inherit; }
+.pick-done { flex-direction: row; align-items: baseline; gap: 8px; }
+.pick-done .x { margin-left: auto; }
+.pick-hits { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.pick-hits button { display: flex; justify-content: space-between; gap: 8px; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: var(--panel); color: var(--ink); padding: 8px 10px; font: inherit; }
+.pick-hits button:last-child { border-bottom: 0; }
+.num { display: inline-flex; align-items: center; gap: 5px; }
+.ph-big { display: flex; flex-direction: column; gap: 7px; }
+.ph-num { font: 600 34px/1 var(--mono, ui-monospace, monospace); letter-spacing: -.02em; }
+.curve { width: 100%; height: auto; display: block; margin: 4px 0 6px; background: color-mix(in srgb, var(--panel) 55%, transparent); border-radius: 8px; }
+table.ind td { vertical-align: top; }
+table.ind tr.ok { background: color-mix(in srgb, var(--ok, #3fb96b) 10%, transparent); }
+table.ind tr.no { color: var(--dim); }
+.sw { display: inline-block; width: 13px; height: 13px; border-radius: 4px; border: 1px solid var(--line); vertical-align: -2px; margin-right: 3px; }
+.gap-card { border-color: var(--line); background: color-mix(in srgb, var(--panel) 70%, transparent); }
+.gap-card .sect { color: var(--dim); }
+
+/* the electrochemistry modes: two electrodes in, a cell out */
+.row.col { flex-direction: column; align-items: stretch; gap: 6px; }
+.eq { font-size: 13.5px; overflow-wrap: anywhere; margin: 4px 0; }
+.eq.big { font-size: 15px; }
+.half + .half { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
+.cell-big { display: flex; flex-direction: column; gap: 7px; }
+.series-list { display: flex; flex-direction: column; gap: 5px; margin-top: 6px; }
+.series-row { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; background: var(--panel-2);
+  border: 1px solid var(--line); border-radius: 10px; padding: 7px 9px; color: inherit; font: inherit; font-size: 13px; cursor: pointer; }
+.series-row.no { opacity: .6; }
+.series-row.yes { border-color: color-mix(in srgb, var(--ok, #3fb96b) 40%, var(--line)); }

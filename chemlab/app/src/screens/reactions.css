@@ -1,0 +1,14 @@
+/* the reactions browser */
+.rx-list { display: flex; flex-direction: column; gap: 5px; margin: 8px 0; }
+.rx-row { display: flex; flex-direction: column; gap: 4px; width: 100%; text-align: left; background: var(--panel-2); border: 1px solid var(--line); border-radius: 11px; padding: 8px 10px; color: inherit; font: inherit; font-size: 13px; cursor: pointer; }
+.rx-row.rx-loud { border-left: 3px solid var(--warn); }
+.rx-row.rx-blocked { border-left: 3px solid var(--danger); }
+.rx-name { font-size: 14px; font-weight: 600; }
+.rx-eq { font-size: 13.5px; }
+.rx-sub { gap: 7px; flex-wrap: wrap; }
+.rx-obs { color: var(--dim); }
+.rx-has { display: flex; gap: 4px; flex-wrap: wrap; align-items: baseline; }
+.rx-has-chip { font-size: 10.5px; }
+.facet-group { margin-top: 8px; }
+.facet-group-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: var(--dim); margin-bottom: 3px; }
+.facet-why { margin: 6px 0 0; padding-left: 1.1em; font-size: 12.5px; color: var(--dim); }

@@ -1,0 +1,17 @@
+/* the header's one search box, and the list it drops over the page */
+.findbar { margin-top: 8px; position: relative; }
+.find-field { flex: 1; margin: 0; }
+.find-field input { width: 100%; background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: .5em .6em; color: var(--ink); font: inherit; font-size: 13.5px; }
+.find-counts { margin: 4px 0 0; color: var(--dim); }
+.find-hits { list-style: none; margin: 6px 0 0; padding: 0; max-height: 56vh; overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+.find-hits li + li { border-top: 1px solid var(--line); }
+.find-hits .note { margin: 8px 10px; }
+.find-hit { display: flex; align-items: baseline; gap: 7px; width: 100%; text-align: left; background: none; border: 0; padding: 8px 10px; color: inherit; font: inherit; font-size: 13px; cursor: pointer; }
+.find-hit:active { background: var(--panel-2); }
+.find-label { font-size: 14px; }
+.find-kind { flex: none; }
+.find-kind.k-species { color: var(--ok); }
+.find-kind.k-element { color: var(--accent); }
+.find-kind.k-reaction { color: var(--warn); }
+.find-kind.k-combination { color: var(--predicted); }
+.find-kind.k-note { color: var(--dim); }

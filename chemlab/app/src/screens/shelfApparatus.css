@@ -1,0 +1,12 @@
+/* the apparatus and materials shelf */
+.sa-list { display: flex; flex-direction: column; gap: 5px; margin: 8px 0; }
+.sa-row { background: var(--panel-2); border: 1px solid var(--line); border-radius: 11px; padding: 8px 10px; font-size: 13px; }
+.sa-row p { margin: 3px 0; }
+.sa-row strong { font-size: 14px; }
+.sa-dims { color: var(--dim); }
+.sa-note { color: var(--dim); }
+.sa-limits { font-size: 12.5px; }
+.sa-census { gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+.sa-count { display: flex; flex-direction: column; align-items: flex-start; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 5px 8px; min-width: 84px; }
+.sa-count strong { font-size: 15px; }
+.sa-count .small { font-size: 10.5px; line-height: 1.25; }

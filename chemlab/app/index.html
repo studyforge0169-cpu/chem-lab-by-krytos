@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0f16" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="A whole chemistry lab from one 1 MB data file: 118 elements, 581 substances, 424 reactions, every ion pair. Offline, on your phone." />
+    <title>ChemLab · the warehouse on your phone</title>
+    <!-- installable: the manifest and the icons are next to the app, not on somebody's CDN -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/icons/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ChemLab" />
+    <!-- the app's own colours, inlined so the first frame is already the dark room and not a
+         white flash before the stylesheet arrives -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #0b0f16;
+        color: #e8eef7;
+      }
+      #boot {
+        font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        padding: 18px 14px;
+        color: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot">
+        Loading the warehouse — 118 elements, 581 substances, 424 reactions. If this is the first
+        time, that is 1.2 MB from the files next to this page, and nothing else.
+      </div>
+    </div>
+    <noscript
+      >ChemLab is a single-page app and needs JavaScript. The data behind it is plain JSON and
+      SQLite and can be read without any of this.</noscript
+    >
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+ "generated": "2026-09-21T07:37:31Z",
+ "files": {
+  "chemlab.json.gz": {
+   "bytes": 1017361,
+   "sha256": "76b67685615fd5137762f356366449e981afda033d7aa3a05bd7af02f3e8d2d4",
+   "data_generated": "2026-09-21 05:52Z",
+   "counts": {
+    "species": 582,
+    "reactions": 424,
+    "elements": 118,
+    "ion_pairs": 380,
+    "ksp": 76,
+    "e0": 87,
+    "pka": 53
+   },
+   "raw_bytes": 9243798
+  },
+  "combinations.json.gz": {
+   "bytes": 258051,
+   "sha256": "d30de2eff18135d2808865f62b71897d137a08f4efb7a44239e36c52982f7ace",
+   "data_generated": "2026-09-21 05:52Z",
+   "counts": {
+    "combinations": 9410,
+    "pair_rows_meta": 1
+   },
+   "raw_bytes": 8010172
+  }
+ },
+ "build_id": "4c758b02e955"
+}

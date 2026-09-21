@@ -1,0 +1,8 @@
+/* the notebook: saved runs, on the device */
+.note-list { display: flex; flex-direction: column; gap: 7px; margin: 8px 0; }
+.note-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 11px; padding: 9px 10px; }
+.note-card.stale { border-color: color-mix(in srgb, var(--warn) 45%, var(--line)); }
+.note-card summary { cursor: pointer; font-size: 12.5px; color: var(--dim); margin-top: 4px; }
+.note-card .kv { margin-top: 6px; }
+.sub { margin-top: 8px; }
+.sub-h { margin: 0 0 3px; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: var(--dim); }

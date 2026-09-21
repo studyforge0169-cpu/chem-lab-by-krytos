@@ -1,0 +1,77 @@
+chemlab — a virtual chemistry lab that runs on a phone, with no network
+======================================================================
+
+Everything in this archive was verified on the machine that built it, on 2026-09-21:
+
+  app:  `npm run check`  -> tsc silent, 276 tests in 16 files passed,
+                            build 1.368 MB of the 1.50 MB transfer budget,
+                            service worker for data build 4c758b02e955
+  data: `python3 scripts/validate_warehouse.py` -> 16 checks, 0 failed
+        `python3 scripts/test_chem.py`          -> 114 kernel tests, 0 failed
+
+What it is
+----------
+A phone-first PWA (React + TypeScript + Vite) that ships the whole warehouse as two gzipped JSON
+files next to the bundle. No backend, no account, no API key, nothing fetched at runtime. Nine
+screens of it: eight tabs, and the Work tab carries six sections:
+
+  table · shelf · bench · calc · safety · reactions · work · more
+  work: schemes · techniques (15) · kits (10) · syllabus (43) · glassware (192) · when it goes wrong (10)
+
+The data: 582 species, 424 reaction records (207 balanced equations + 217 process records), 118
+elements with ~40 cited properties each, 9 410 element-pair rows, 380 cation-anion rows, Ksp/pKa/E0/
+ΔfH/glassware-tolerance tables, the lab-behaviour layer (stock bottles, indicators, the salt-analysis
+tree, GHS, waste, first aid, storage, the CBSE/undergrad practical index, a 192-row apparatus and
+materials register) and an explicit refusal list. Every numeric field carries {value, units, source,
+ref_id, confidence}; a value that is not in the data stays null with a sentence saying why. Nothing in
+here invents a number.
+
+Try it, five seconds from now
+----------------------------
+`app/dist/` is a finished build. A built PWA will not run off `file://` (the service worker and the
+data fetch both need an http origin), so give it a tiny server:
+
+  cd app && python3 -m http.server 8080 --directory dist
+  # or, if you have node:  node scripts/serve.mjs dist --port 4173
+
+Open http://localhost:8080 — or, from the phone on the same wifi, http://<your-computer's-ip>:8080.
+In Chrome on Android: the ⋮ menu -> "Add to home screen". Then put the phone in airplane mode and
+reopen it: the header says "offline: this whole lab is on the device", because it is.
+
+Worked links worth tapping
+--------------------------
+  /?tab=work                                       the practical tab, six sections
+  /?bench=hcl:20mL@2.0,naoh:20mL@2.0                a titration, with moles, ΔH, pH curve, glassware error
+  /?species=khp                                     the primary standard the app proved was missing
+  /?reaction=redox_iodine_clock                     one full reaction record, observations included
+  /?element=Fe                                      every cited property of one element
+  /?tab=reactions                                   all 424 records, 24 facets whose counts come from the rows
+
+Rebuilding the data (only if you edit data_curated/)
+----------------------------------------------------
+  python3 scripts/build_warehouse.py      # -> data/chemlab.json(.gz), chemlab.db(.gz), DATA_REPORT.md
+  python3 scripts/validate_warehouse.py   # 16 re-derivations; must end "16 passed, 0 failed"
+  cd app && npm install && npm run sync   # copies the .gz files in, with the build id and sha256
+  npm run check                           # typecheck, 276 tests, build, size budgets
+
+`raw/` holds the fetched inputs (the vendored element table, the PubChem hits). Without them the
+build reuses what is already in `data/`; with them it can re-derive everything from scratch.
+Deliberately NOT in this archive: node_modules (run `npm install`), and the uncompressed
+data/chemlab.json + chemlab.db (9 MB and 18 MB). The validator reads the .gz copies when the plain
+file is absent, so the data gate runs in this archive as shipped; `build_warehouse.py` writes both
+uncompressed files again if you want to query the warehouse from a notebook.
+
+The Android .apk
+----------------
+`app/docs/BUILD_ANDROID.md` — the same `dist/` wrapped in Capacitor, with the exact commands, the
+icon/manifest requirements and what to check on the handset.
+
+Not built (said plainly, because the file is honest about it)
+-------------------------------------------------------------
+Prompt 16 in `app/ROADMAP.md` is the natural-language layer — you type "make water" or "i want an
+acid" and it searches every route the warehouse supports, step by step, with the guard on each step.
+The prompt is written, with its measured numbers and its acceptance criteria, and the code is not
+written yet. Nothing in the app pretends to have it: no stub text, no dead button, no "coming soon".
+The same file also lists what the data will not answer: 111 of 207 balanced equations can have their
+enthalpy computed end-to-end, kinetics are timescales rather than rate constants, and 431 of the 582
+shelf records have no producing reaction in the 424.

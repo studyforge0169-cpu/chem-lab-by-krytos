@@ -1,0 +1,15 @@
+/* a reaction record, read top to bottom */
+.rs-hd h2 { margin: 0 0 6px; font-size: 17px; }
+.rs-eq { font-size: 15px; margin: 4px 0; overflow-wrap: anywhere; }
+.rs-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; margin: 5px 0; }
+.rs-lab { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--dim); min-width: 118px; }
+.rs-obs { margin: 5px 0; font-size: 13.5px; }
+.rs-ctrl { margin: 5px 0; font-size: 13px; }
+.terms { padding: 2px 0; }
+.terms + .terms { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 8px; }
+.term { display: flex; flex-wrap: wrap; align-items: baseline; gap: 7px; margin: 4px 0; }
+.term .link { font-size: 14px; }
+.dim { color: var(--dim); }
+.withheld { border-color: color-mix(in srgb, var(--warn) 38%, var(--line)); background: color-mix(in srgb, var(--warn) 6%, transparent); }
+.sub-h { margin: 0 0 3px; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: var(--dim); }
+ul.plain { margin: 4px 0; padding-left: 18px; font-size: 13px; }
