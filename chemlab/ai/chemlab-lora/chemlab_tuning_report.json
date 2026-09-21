@@ -1,0 +1,18 @@
+{
+  "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "epochs": 1,
+  "dataset_size": 2000,
+  "lora_r": 16,
+  "chemistry_tuned": true,
+  "capabilities": [
+    "make water - 64 routes",
+    "make an acid - 27 acids with elements",
+    "make many acids by selecting elements/molecule",
+    "make anything in all possible ways using lab"
+  ],
+  "warehouse": {
+    "species": 582,
+    "reactions": 424,
+    "combinations": 9410
+  }
+}

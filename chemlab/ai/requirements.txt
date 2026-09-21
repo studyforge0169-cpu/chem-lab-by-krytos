@@ -1,0 +1,14 @@
+# ChemLab AI - Python backend requirements
+torch>=2.0.0
+transformers>=4.38.0
+accelerate>=0.27.0
+peft>=0.10.0
+bitsandbytes>=0.42.0
+datasets>=2.18.0
+trl>=0.7.0
+fastapi>=0.110.0
+uvicorn>=0.27.0
+pydantic>=2.6.0
+tqdm>=4.66.0
+numpy>=1.26.0
+python-multipart>=0.0.9
