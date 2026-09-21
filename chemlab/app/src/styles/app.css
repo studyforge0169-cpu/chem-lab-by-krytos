@@ -345,12 +345,12 @@ button.link {
 }
 button.link:hover { color: #fff; text-shadow: var(--accent-glow); border-bottom-color: #fff; }
 
-/* PILL BUTTONS — RED HACKER */
+/* PILL BUTTONS — RED HACKER — FIXED NO OVERLAY */
 .pill-btn {
   border: 1px solid var(--line);
   background: #000;
   border-radius: 0;
-  padding: .4em .9em;
+  padding: .45em 1em;
   font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
@@ -359,24 +359,19 @@ button.link:hover { color: #fff; text-shadow: var(--accent-glow); border-bottom-
   color: var(--accent);
   transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
-}
-.pill-btn::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--accent);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  z-index: -1;
+  overflow: visible;
+  min-width: 0;
+  word-break: break-word;
+  line-height: 1.2;
 }
 .pill-btn:hover {
   color: #fff;
   border-color: var(--accent);
-  box-shadow: var(--accent-glow);
+  background: #1a0005;
+  box-shadow: var(--accent-glow-soft);
   text-shadow: 0 0 6px #fff;
+  transform: translateY(-1px);
 }
-.pill-btn:hover::before { transform: translateX(0); }
 .pill-btn[aria-pressed="true"] {
   border-color: var(--accent);
   color: #fff;

@@ -288,15 +288,17 @@ main {
   overflow-x: hidden !important;
 }
 
-/* BUTTONS FIX — TEXT VISIBLE */
+/* BUTTONS FIX — TEXT VISIBLE — NO OVERLAY */
 .pill-btn, button {
   min-width: 0 !important;
   overflow: visible !important;
   word-break: break-word !important;
   position: relative !important;
 }
-.pill-btn::before {
-  z-index: 0 !important;
+.pill-btn::before,
+.pill-btn::after {
+  display: none !important;
+  content: none !important;
 }
 .pill-btn > * {
   position: relative;
